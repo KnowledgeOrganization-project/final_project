@@ -9,6 +9,7 @@
         <link rel="icon" href="img/icon3.png" type="image/x-icon" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Slider.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
@@ -46,30 +47,111 @@
                 </div>
             </div>
         </header>
+        
         <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">About the project</h2>
-                        <p class="text-white-50">
-                           <i>Cleopatra</i> is a project developed within the framework of the <a href="https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2023/490899">Knowledge Organization in Libraries and Archives</a> course of the <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge">Digital Humanities and Digital Knowledge</a> Master's program at the University of Bologna.<br> 
-                           This project focuses on Cleopatra VII Thea Philopator, the famous queen of Ancient Egypt.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div style="text-align:center">
+        <p class="descrizionesito">
+            -
+            -
+            -
+        </p>
+    </div>
+   
+    <input type="radio" id="s-1" name="slider-control" checked="checked">
+    <input type="radio" id="s-2" name="slider-control">
+    <input type="radio" id="s-3" name="slider-control">
+    <input type="radio" id="s-4" name="slider-control">
+    <div class="js-slider">
+        <figure class="js-slider_item img-1">
+            <figcaption class="wo-caption">
+                <h3 class="wo-h3">
+                    <div class="c-label">Cleopatra VII Thea Philopator</div>
+                    <br class="view-sm mb-s">The history.
+                </h3>
+                    <p class="descrizione">
+                        Cleopatra VII Thea Philopator was the last ruler of ancient Egypt from the Ptolemaic dynasty. She ascended the throne in 51 BC and established 
+                        relationships with Roman leaders to maintain Egypt's independence. Her affair with Julius Caesar led to political tensions and the 
+                        birth of a son, Caesarion. After Caesar's death, Cleopatra allied with Mark Antony. Their defeat at the Battle of Actium in 31 BC led
+                        to Egypt's fall to Octavian, later known as Emperor Augustus. Cleopatra and Mark Antony committed suicide in 30 BC, marking the end of the Ptolemaic dynasty and the beginning of Roman hegemony in Egypt. Her figure has become legendary, celebrated for her intelligence, beauty, and political prowess.
+                </ul>
+            </figcaption>
+        </figure>
+        <figure class="js-slider_item img-2">
+            <figcaption class="wo-caption" >
+                <h3 class="wo-h3">
+                    <div class="c-label">Cleopatra VII Thea Philopator</div>
+                    <br class="view-sm mb-s">Why is she important?
+                </h3>
+                    <p class="descrizione">
+                        Cleopatra VII Thea Philopator was the last active ruler of the Ptolemaic Kingdom of Egypt, renowned for her 
+                        intelligence, political acumen, and relationships with Roman leaders Julius Caesar and Mark Antony. 
+                        She played a crucial role in the politics of the ancient Mediterranean, seeking to maintain Egypt's independence amid the power struggles of the Roman Republic. Her legacy as a powerful and enigmatic figure has persisted through the ages, inspiring countless works of art, literature, and popular culture.
+                    </p>
+                    </p>
+                </ul>
+            </figcaption>
+        </figure>
+        <figure class="js-slider_item img-3">
+            <figcaption class="wo-caption">
+                <h3 class="wo-h3">
+                    <div class="c-label">Cleopatra VII Thea Philopator</div>
+                    <br class="view-sm mb-s">cose a caso
+                </h3>
+                    <p class="descrizione">
+                        my name is giovanni giorgio but everybody calls me giorgio
+                    </p>
+                </ul>
+            </figcaption>
+        </figure>
+        <figure class="js-slider_item img-4">
+            <figcaption class="wo-caption">
+                <h3 class="wo-h3">
+                    <div class="c-label">Cleopatra VII Thea Philopator</div>
+                    <br class="view-sm mb-s">Hello starsssss!
+                </h3>
+                <p class="descrizione">
+                        viva la pa pa paaaa con il po po pomooddoorrooo
+                </p>
+                </ul>
+            </figcaption>
+        </figure>
+        <div class="js-slider_nav">
+            <label class="js-slider_nav_item s-nav-1 prev" for="s-4"></label>
+            <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+            <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+            <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+            <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+            <label class="js-slider_nav_item s-nav-3 next" for="s-4"></label>
+            <label class="js-slider_nav_item s-nav-4 prev" for="s-3"></label>
+            <label class="js-slider_nav_item s-nav-4 next" for="s-1"></label>
+        </div>
+        <div class="js-slider_indicator">
+            <div class="js-slider-indi indi-1"></div>
+            <div class="js-slider-indi indi-2"></div>
+            <div class="js-slider-indi indi-3"></div>
+            <div class="js-slider-indi indi-4"></div>
+        </div>
+    </div>
+
         <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="img/cleopatraBG.jpg" alt="Artwork representing Queen Cleopatra" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text">
-                            <h4 >Scenario</h4>
-                            <p id="scenario" class="text-black-50 mb-0">In the realm of historical figures, few captivate the imagination quite like Cleopatra VII Philopator, the last active ruler of the Ptolemaic Kingdom of Egypt. Renowned for her intellect, charisma, and political prowess, Cleopatra's legacy has endured through centuries, inspiring artists, scholars, and historians alike. In this scenario, we embark on a journey through a Linked Open Data (LOD) project centered around Cleopatra, utilizing interconnected datasets to illuminate various facets of her life, reign, and impact on history.</p>
+        <div id="jazz" class="gallery-header">JAZZ</div>
+
+        <div id="jazz" class="gallery-flex-wrapper">
+            <div class="gallery-img-appearance">
+                <img src="../img/cleopatra3.jpeg">
+            </div>
+            <div class="gallery-song-caption">
+                Autore: Frank Sinatra <br>
+Titolo: Come Fly with me <br>
+Album: Come Fly with me <br>
+Anno: 1958<br>
+Un classico imperdibile, un viaggio romantico e dall’atmosfera poetica. E’ cosi che Sinatra ci invita a volare in terre lontane! <br>
+<b>Note da Bere</b> con un <i>Cabernet Suvignon 2007</i>, al profumo di ciliegia con sentori di spezie
+
+
+            </div>
+        </div>
+
                             
                             <!-- ovviamente da togliere-->                           
                             <div style="background-color: yellow;"><p>paletta dei colori</p>
@@ -79,6 +161,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="img/demo-image-01.jpg" alt="..." /></div>

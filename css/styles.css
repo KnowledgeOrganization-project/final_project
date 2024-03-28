@@ -22,7 +22,7 @@
 
 #myBtnContainer:after {
   font-size: 13px;
-  color: #777;
+  color: #ffffff;
   float: right;
   margin-right: 65px;
 }
@@ -129,7 +129,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 hr {
@@ -11230,3 +11230,18 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.descrizionesito {
+  text-align: center;
+  color: white;
+  font-family: 'Gentium Book Plus', serif;
+  font-size: 200%;
+  margin: 5vh;
+  display: block;
+ 
+}
+
+.Credits{
+  font-size:1.2vw;
+}
+
