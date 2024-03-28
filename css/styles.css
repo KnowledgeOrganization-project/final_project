@@ -1,5 +1,39 @@
 @charset "UTF-8";
 
+/* metadata tables */
+
+.td1 {
+  font-weight: bold;
+}
+
+.sectitle {
+  color: #000000;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 25pt;
+  padding-top: 2rem;
+}
+
+#myBtnContainer {
+  text-align: center;
+  /*margin:0px 0px 30px 40px;*/
+  margin-bottom: 30px;
+}
+
+#myBtnContainer:after {
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-right: 65px;
+}
+
+.filterDiv {
+  display: none;
+  /* Hidden by default */
+}
+
+/* end of metadata tables */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -460,7 +494,8 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  -webkit-appearance: button; /* Vendor-prefixed version */
+  appearance: button; /* Standard property */
 }
 
 output {
