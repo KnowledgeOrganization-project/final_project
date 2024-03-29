@@ -2,6 +2,8 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 ex:bracelet a crm:E22_Man-Made_Object ;
     crm:P2_has_type "ArchaeologicalArtifact" ;
@@ -21,8 +23,11 @@ ex:TheBritishMuseum a crm:E39_Actor ;
 ex:gold a crm:E57_Material ;
     crm:P2_has_type "Gold" .
 
-ex:ancientEgyptians a crm:E39_Actor ;
-    crm:P48_has_preferred_identifier "AncientEgyptians" .
+ex:AncientEgyptians a crm:E39_Actor ;
+    rdf:type ex:Civilization ;
+    rdfs:label "Ancient Egyptians" .
+
+#for later (connection Cleopatra-bracelet): ex:CleopatraVII ex:belongTo ex:ancientEgyptians .
 
 ex:TimeSpan a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin "−305"^^xsd:gYear ;
