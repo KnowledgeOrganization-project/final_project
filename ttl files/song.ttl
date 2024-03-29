@@ -1,0 +1,18 @@
+@prefix ex: <http://cleopatra-project.org/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+ex:Cleopatra a crm:E28_Conceptual_Object ;
+    crm:P2_has_type "Audio Track" ;
+    crm:P102_has_title "Cleopatra" ;
+    ex:hasSinger ex:SamiraEfendi ;
+    crm:P102_has_genre "Pop Music" ;
+    crm:P102_has_format "Streaming" ;
+    crm:P72_has_language "English" ;
+    dct:publisher "BMF Records" ;
+    dct:date "2020"^^xsd:gYear .
+
+ex:SamiraEfendi a crm:E21_Person ;
+    crm:P48_has_preferred_identifier "Samira Efendi" .
