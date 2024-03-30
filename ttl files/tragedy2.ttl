@@ -1,0 +1,26 @@
+@prefix ex: <http://cleopatra-project.org/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+
+<http://example.org/books/AntonyAndCleopatra> a schema:Book ;
+    dc:title "Antony and Cleopatra" ;
+    schema:author <http://example.org/authors/WilliamShakespeare> ;
+    schema:contributor <http://example.org/contributors/JohnDryden> ;
+    ex:hasMedium "Printed Book" ;
+    schema:genre schema:Tragedy ;
+    dc:date "1607" ;
+    dc:publisher "London" ;
+    dc:date "1813" .
+
+<http://example.org/authors/WilliamShakespeare> a schema:Person ;
+    foaf:name "William Shakespeare" .
+
+<http://example.org/contributors/JohnDryden> a schema:Person ;
+    foaf:name "John Dryden" .
+
+schema:Tragedy a schema:Genre ;
+    schema:name "Tragedy" .
+
+schema:Book a schema:CreativeWork ;
+    schema:name "Printed Book" .

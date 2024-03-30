@@ -4,18 +4,23 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>. 
 
 ex:bracelet a crm:E22_Man-Made_Object ;
     crm:P2_has_type "ArchaeologicalArtifact" ;
     crm:P45_consists_of ex:gold ;
     crm:P4_has_time-span ex:TimeSpan ;
+    dct:provenance ex:Egypt ;
     crm:P50_has_current_keeper ex:TheBritishMuseum ;
     crm:P32_used_general_technique "Ciselure" ;
     crm:P32_used_general_technique "Incision" ;
     crm:P32_used_general_technique "Twisting" ;
     crm:P108_has_produced ex:AncientEgyptians ;
-    crm:P30_transferred_custody_of ex:TheBritishMuseum ;
     crm:P32_acquired_title_through ex:bequeathal .
+
+ex:Egypt a crm:E53_Place ;
+    owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
 
 ex:TheBritishMuseum a crm:E39_Actor ;
     crm:P48_has_preferred_identifier "TheBritishMuseum" .
@@ -32,3 +37,9 @@ ex:AncientEgyptians a crm:E39_Actor ;
 ex:TimeSpan a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin "−305"^^xsd:gYear ;
     crm:P82b_end_of_the_end "−30"^^xsd:gYear .
+
+ex:bequeathal a crm:E10_Transfer_of_Custody ;
+    crm:P30_transferred_custody_of ex:TheBritishMuseum ;
+    crm:P31_has_modified ex:bracelet ;
+    crm:P32_acquired_title_through "Sir Augustus Wollaston Franks" ;
+    dct:date "1897" .
