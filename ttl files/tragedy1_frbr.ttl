@@ -1,0 +1,30 @@
+#example in FRBR
+@prefix ex: <http://cleopatra-project.org/>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix schema: <http://schema.org/>.
+
+<http://cleopatra-project.org/expressions/AntonyAndCleopatra> a frbr:Expression ;
+    frbr:embodiment <http://cleopatra-project.org/items/AntonyAndCleopatra> ;
+    frbr:creator <http://cleopatra-project.org/authors/WilliamShakespeare> ;
+    frbr:contributor <http://cleopatra-project.org/contributors/JohnDryden> ;
+    frbr:genre <http://cleopatra-project.org/genres/Tragedy> ;
+    dc:date "1607" ;
+    dc:publisher "London" ;
+    dc:date "1813" .
+
+<http://cleopatra-project.org/items/AntonyAndCleopatra> a frbr:Manifestation ;
+    frbr:realizationOf <http://example.org/expressions/AntonyAndCleopatra> ;
+    dc:title "Antony and Cleopatra" .
+
+<http://cleopatra-project.org/authors/WilliamShakespeare> a schema:Person ;
+    schema:name "William Shakespeare" .
+
+<http://cleopatra-project.org/contributors/JohnDryden> a schema:Person ;
+    schema:name "John Dryden" .
+
+<http://cleopatra-project.org/genres/Tragedy> a schema:Genre ;
+    schema:name "Tragedy" .
+
+schema:Book a schema:CreativeWork ;
+    schema:name "Printed Book" .
