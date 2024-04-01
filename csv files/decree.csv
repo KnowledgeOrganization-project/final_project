@@ -1,0 +1,13 @@
+Subject ,Predicate ,Object 
+Royal decree ,crm:P8_took_place_on_or_within ,Egypt/Alexandria 
+Royal decree ,crm:P3_has_note ,Cleopatra’s signature 
+Royal decree ,bibframe:originDate ,Before 23 february 33BC 
+Royal decree ,dcterms:type ,Documentary 
+Royal decree ,dcterms:language ,Koine Greek 
+Royal decree ,crm:P45_consists_of ,Papyrus 
+Royal decree ,crm:P53_has_former_or_current_location ,Egyptian Museum of Berlin 
+Royal decree ,dcterms:Location ,Alexandria 
+Royal decree ,dcterms:type ,Manuscript 
+Royal decree ,dcterms:subject ,Q. Cascellius 
+Royal decree ,foaf:primaryTopic ,International Trade 
+Royal decree ,dcterms:creator ,Ancient Egyptians 
