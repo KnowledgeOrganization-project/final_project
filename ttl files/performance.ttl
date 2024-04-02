@@ -1,0 +1,23 @@
+@prefix ex: <http://cleopatra-project.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+
+ex:Performance a crm:E5_Event ;
+    crm:P2_has_type "Dance" ;
+    crm:P102_has_title "Cleopatra" ;
+    schema:genre schema:PerformingArts ;
+    dcterms:creator "David Nixon" ;
+    crm:E74_Group ex:NorthernBalletsCompanys ;
+    crm:E52_Time_Span "2011" .
+
+ex:NorthernBalletsCompanys a crm:E74_Group ;
+    owl:sameAs <https://northernballet.com> ;
+    crm:P53_has_former_or_current_location ex:UnitedStates ;
+    crm:P48_has_preferred_identifier "Northern Ballet’s company" .
+
+ex:PerformingArts a schema:Genre ;
+    owl:sameAs <https://dbpedia.org/page/Performing_arts> .
