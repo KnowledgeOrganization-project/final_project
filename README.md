@@ -8,4 +8,3 @@ Here you can find the repository of the end-of-the-course project for Knowledge 
 * [Chiara Martina](https://github.com/Chiaramartina)
 * [Carla Menegat](https://github.com/CarlaMenegat)
 * [Lucrezia Pograri](https://github.com/lucreziapograri)
-* [Catalina Salguero]()
