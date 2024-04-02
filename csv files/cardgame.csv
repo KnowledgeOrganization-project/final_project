@@ -1,0 +1,11 @@
+SUBJECT,PREDICATE,OBJECT
+Card Game, rdf:type, Human-Made Object 
+Card Game, crm:P2_has_type, Board Game   
+Card Game, dct:title, Caesar & Cleopatra  
+Card Game, dcterms:creator, Wolfgang Ludtke  
+Card Game, dct:date, 2000
+Card Game, dct:subject, Ceasar and Cleopatra  
+Card Game, crm:E47_Material, Card  
+Card Game, dcterms:publisher, Rio Grande Games   
+Card Game, schema:genre, Strategy   
+Card Game, dcterms:language, Italian  
