@@ -1,0 +1,10 @@
+SUBJECT,PREDICATE,OBJECT
+Movie,dbo:type, Movie  
+Movie,dcterms:creator, Joseph L. Mankiewie   
+Movie,crm:P108_has_produced, 20th Century Studios 
+Movie,dc:date, 1963
+Movie,dcterms:subject, Cleopatra 
+Movie,dct:language, English
+Movie,dc:title, Cleopatra
+Movie,crm:E53_Place, United States  
+Movie,schema:genre, Colossal
