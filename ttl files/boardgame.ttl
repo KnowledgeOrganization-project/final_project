@@ -1,0 +1,45 @@
+@prefix ex: <http://cleopatra-project.org/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix schema: <http://schema.org/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+ex:CardGame a crm:E22_Human-Made_Object;
+    dct:title "Caesar & Cleopatra" ;
+    crm:P2_has_type "Board Game" ;
+    crm:E53_Place "Germany";
+    schema:genre schema:Strategy ;
+    dcterms:creator "Wolfgang Ludtke" ;
+    dct:date "2020"^^xsd:gYear ;
+    dcterms:language "Italian" ;
+    dct:publisher "Rio Grande Games" ;
+    crm:E57_Material ex:paper ;
+    dct:subject ex:CleopatraVII ;
+    dct:subject ex:JuliusCaesar .
+
+ex:card a crm:E57_Material ;
+    crm:P2_has_type "Paper" ;
+    owl:sameAs <https://dbpedia.org/page/Paper> .
+
+ex:RioGrandeGames a foaf:Organization ;
+    owl:sameAs <https://www.riograndegames.com/> .
+
+#Subject
+ex:CleopatraVII a foaf:Person ;
+    rdfs:label "Cleopatra VII" ;
+    owl:sameAs <http://viaf.org/viaf/67762941> ;
+    owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
+    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> .
+
+ex:Germany a crm:E53_Place ;
+    owl:sameAs <https://www.geonames.org/2921044/germany.html> .
+
+ex:JuliusCaesar a foaf:Person ;
+    owl:sameAs <https://viaf.org/viaf/286265178/> ;
+    foaf:member ex:RepublicRomans .

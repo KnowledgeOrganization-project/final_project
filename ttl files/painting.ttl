@@ -1,0 +1,59 @@
+@prefix ex: <http://cleopatra-project.org/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix bibframe:  <https://www.loc.gov/bibframe/>.
+
+ex:TheMeetingofAntonyandCleopatra a crm:E24_Physical_Human_Made_Thing ;
+    crm:P102_has_title "The Meeting of Antony and Cleopatra"
+    crm:P2_has_type "Artwork" ;    
+    crm:P62_depicts ex:CleopatraVII ;
+    crm:P62_depicts ex:MarkAnthony ;
+    crm:P127_has_broader_term ex:Baroque ;
+    bibframe:originDate "1745-1747"^^xsd:gYear ;
+    foaf:maker ex:GiambattistaTiepolo ;
+    crm:P32_used_general_technique "Oil on canvas" ;
+    crm:P50_has_current_keeper ex:MetropolitanMuseumofArt ;
+    crm:P23_surrendered_title_through ex:donation ;
+
+
+ex:CleopatraVII a foaf:Person ;
+    owl: sameAs <http://viaf.org/viaf/67762941> ;
+    owl: sameAs <https://dbpedia.org/page/Cleopatra> ;
+    owl: sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
+    bibframe:family ex:MarkAnthony ;
+    bibframe:family ex:JuliusCaesar ;
+    rdfs:label "Queen of Egypt" .
+
+ex:MarkAnthony a foaf:Person ;
+    owl: sameAs <https://viaf.org/viaf/88759462/> ;
+    foaf:member ex:RepublicRomans ;
+    bibframe:family ex:CleopatraVII .
+
+ex:Baroque a crm:E55_Type ;
+    owl: sameAs <https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300021147>;
+    owl: sameAs <https://id.loc.gov/authorities/subjects/sh85008345.html>.
+
+ex:GiambattistaTiepolo a foaf:Person
+    crm:P48_has_preferred_identifier "GiovanniBattistaTiepolo"
+    owl: sameAs <https://viaf.org/viaf/71399712/> ;
+    owl: sameAs <https://www.britishmuseum.org/collection/term/BIOG48527> ;
+    #birthdate
+    #deathdate
+
+ ex:donation a crm:E08_Acquisitions ;
+    crm:P29_custody_received_by ex:MetrpolitanMuseumofArt ;
+    crm:P30_transferred_custody_of  ex:CharlesWrightsman ;
+    dct:date "2019"^^xsd:gYear .
+
+ex:CharlesWrightsman foaf:Person ;
+    owl: sameAs<https://viaf.org/viaf/8475873/> .
+
+ex:MetropolitanMuseumofArt a crm:E39_Actor ; 
+    owl: sameAs <https://www.metmuseum.org/> ; 
+    crm:P53_has_former_or_current_location ex:NewYork ;
+    crm:P48_has_preferred_identifier "TheMET" .
