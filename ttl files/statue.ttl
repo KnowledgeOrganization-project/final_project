@@ -1,0 +1,71 @@
+@prefix ex: <http://cleopatra-project.org/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+ex:Statue a crm:E24_Physical_Human_Made_Thing ;
+    crm:P62_depicts ex:CleopatraVII ;
+    crm:P2_has_type "Artwork" ;
+    crm:P9_consists_of "TimeSpan" ;
+    crm:P45_consists_of ex:domolite ;
+    crm:P8_took_place_on_or_within ex:Egypt ;
+    crm:P50_has_current_keeper ex:MetropolitanMuseumofArt ;
+    crm:P108_has_produced ex:AncientEgyptians ;
+    crm:P23_surrendered_title_through ex:donation ;
+    crm:P113_removed ex:Colonialism ;
+    crm:P65_shows_visual_item ex:CleopatraInscription;
+
+ex:CleopatraVII a crm:E21_Person ;
+    owl: sameAs <http://viaf.org/viaf/67762941> ;
+    owl: sameAs <https://dbpedia.org/page/Cleopatra> ;
+    owl: sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> .    
+
+ex:dolomite a crm:E57_Material ;
+    crm:P2_has_type "Domolite limestone" ;
+    owl: sameAs <https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300011348>.
+
+ex:Egypt a crm:E53_Place ;
+    owl: sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
+    
+ex:MetropolitanMuseumofArt a crm:E39_Actor ; 
+    owl: sameAs <https://www.metmuseum.org/> ; 
+    crm:P53_has_former_or_current_location ex:NewYork ;
+    crm:P48_has_preferred_identifier "TheMET" .
+
+ex:NewYork acrm:E53_Place
+    owl: sameAs <https://www.geonames.org/5128581/new-york-city.html>
+
+ex:TimeSpan a crm:E4_Period ;
+    crm:P82a_begin_of_the_begin "−305"^^xsd:gYear ;
+    crm:P82b_end_of_the_end "−30"^^xsd:gYear .
+
+ex:donation a crm:E08_Acquisitions ;
+    crm:P29_custody_received_by ex:MetrpolitanMuseumofArt ;
+    crm:P30_transferred_custody_of  ex:Joseph_Willian_Drexel ;
+    dct:date "1889"^^xsd:gYear .
+
+ex:Joseph_Willian_Drexel a crm:E21_Person ;
+    owl: sameAs <https://viaf.org/viaf/20908464/>;
+
+ex:AncientEgyptians a crm:E74_Group ;
+    rdf:type ex:Civilization ;
+    rdfs:label "Ancient Egyptians" .
+
+ex:Colonialism a crm:E4_Period ;
+    owl: sameAs: <https://catalogue.bnf.fr/ark:/12148/cb155447891> ;
+    owl: sameAs: <https://www.britannica.com/topic/Western-colonialism> ;
+    crm:P82a_begin_of_the_begin "1488"^^xsd:gYear ;
+    crm:P82b_end_of_the_end "1962"^^xsd:gYear .
+
+ex:CleopatraInscription a crm:E34_Inscription;
+    crm:P190_has_symbolic_content ex:CleopatraVII
+    rdfs:label "Cleopatra"
+    crm:P3_has_note '"The cartouche actually reading "Cleopatra" on this statue's arm would be a highly unusual occurrence, and is, moreover, incorrectly oriented, so that it is probably a modern addition."'.
+
+
+
+
