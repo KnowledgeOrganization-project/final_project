@@ -11,7 +11,7 @@
 @prefix dcterms: <https://purl.org/dc/terms/>.
 
 
-ex:CleopatraMovie a dbo:Film ;
+ex:CleopatraMovie a dbo:Movie ;
     dc:title "Cleopatra" ;
     dcterms:creator <https://dbpedia.org/page/Joseph_L._Mankiewicz> ;
     dc:date "1963" ;
