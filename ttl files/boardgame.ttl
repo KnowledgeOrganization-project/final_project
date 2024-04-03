@@ -27,6 +27,9 @@ ex:card a crm:E57_Material ;
     crm:P2_has_type "Paper" ;
     owl:sameAs <https://dbpedia.org/page/Paper> .
 
+ex:Germany a crm:E53_Place ;
+    owl:sameAs <https://www.geonames.org/2921044/germany.html> .
+
 ex:RioGrandeGames a foaf:Organization ;
     owl:sameAs <https://www.riograndegames.com/> .
 
@@ -36,9 +39,6 @@ ex:CleopatraVII a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/67762941> ;
     owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
     owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> .
-
-ex:Germany a crm:E53_Place ;
-    owl:sameAs <https://www.geonames.org/2921044/germany.html> .
 
 ex:JuliusCaesar a foaf:Person ;
     owl:sameAs <https://viaf.org/viaf/286265178/> ;
