@@ -9,8 +9,9 @@
                 <distributor>
                 <name>Cleopatra Project</name>
                 <address>
-                    <addrLine><http://cleopatra-project.org/></addrLine>
+                    <url>http://cleopatra-project.org/</url>
                 </address>
+                </distributor>
                 <availability status="free">
                     <licence target="http://creativecommons.org/licenses/by-sa/3.0/">
                     </licence>
@@ -40,16 +41,20 @@
                     </publicationStmt>
                     <notesStmt>
                         <note anchored="true">
-                        In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. To see more <https://en.wikipedia.org/wiki/Long_s>.
+                        In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
+                        To see more <address><url>https://en.wikipedia.org/wiki/Long_s</url></address>.
+                        
+                        
                         </note>
                         <note anchored="true">
                         John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
-                            <sourceNote> <https://www.britannica.com/biography/William-Shakespeare/Literary-criticism> </sourcenote>
+                            <sourceNote> <address><url>https://www.britannica.com/biography/William-Shakespeare/Literary-criticism</url></address> </sourceNote>
                         </note>
                     </notesStmt>
                 </bibfull>
             </sourceDesc>
         </fileDesc>
+    </teiHeader>
     <text>
         <body>
             <pb n="vv6v"/>
@@ -60,9 +65,9 @@
                 <head rend="italic">Act I Scene 3</head>
                 <lb n="2"/>
                 <sp>
-                        <scene><hirend="italic">A Room </hi> in CLEOPATRA'S Palace </scene>
-                        <stage rend="italic">CLEOPATRA, CHARMION, IRAS, <hirend="italic">and</hi> ALEXAS <hirend="italic"> discover'd<h/hi>.</stage>
-                        <lb n="3"/>
+                    <scene><hi rend="italic">A Room </hi> in CLEOPATRA'S Palace </scene>
+                    <stage rend="italic">CLEOPATRA, CHARMION, IRAS, <hi rend="italic">and</hi> ALEXAS <hi rend="italic"> discover'd</hi>.</stage>
+                    <lb n="3"/>
                 </sp>
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
@@ -95,7 +100,7 @@
                         <lb n="11" rend="rj"/>
                     </ab>
                 </sp>
-                    <hirend="italic">Exit Alexas.</hi>
+                    <hi rend="italic">Exit Alexas.</hi>
                     <lb n="12"/>
                 <sp>
                     <speaker rend="italic">Char.</speaker>
@@ -134,7 +139,7 @@
                     <ab>
                         Tempt him not so too far. 
                         <lb n="19"/>
-                        <stage><hirend="italic">Enter</hi> ANTONY.</stage>
+                        <stage><hi rend="italic">Enter</hi> ANTONY.</stage>
                         <lb n="20"/>
                         But heere comes
                     </ab>
