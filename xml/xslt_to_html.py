@@ -3,7 +3,7 @@
 from lxml import etree
 
 # Load XML input and XSLT stylesheet
-xml_doc = etree.parse("tragedy.xml")
+xml_doc = etree.parse("tragedy_TEI.xml")
 xslt_doc = etree.parse("stylesheet.xslt")
 
 # Create an XSLT transformer
