@@ -1,4 +1,6 @@
-<TEI>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -19,12 +21,12 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl>
-                    Parcial version of -- Act 1 Scene 3
+                    Partial version of -- Act 1 Scene 3
                     <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>
                 </bibl>
                 <bib>
                 This version was developed in the context of "Cleopatra Project" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
-                within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna, based in the specified printed edition.
+                within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna, based on the specified printed edition.
                 </bib>
                 <bibfull>
                     <titleStmt>
