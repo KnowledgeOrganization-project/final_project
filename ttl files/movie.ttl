@@ -7,15 +7,16 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>. 
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
-@prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix dcterms: <https://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>. 
 
 
 ex:CleopatraMovie a dbo:Movie ;
-    dc:title "Cleopatra" ;
+    dcterms:title "Cleopatra"^^xsd:string ;
     dcterms:creator <https://dbpedia.org/page/Joseph_L._Mankiewicz> ;
-    dc:date "1963" ;
+    dcterms:created "1963"^^xsd:gYear;
     schema:genre schema:Colossal ;
+    schema:duration "217min"^^xsd:string;
     crm:E53_Place "United States" ;
     dct:language "English" ;
     crm:P108_has_produced ex:20th_Century_Studios ;
