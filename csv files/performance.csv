@@ -1,6 +1,7 @@
 SUBJECT,PREDICATE,OBJECT
 Performance, rdf:type, Event 
 Performance, crm:P2_has_type, Dance  
+Performance, schema:duration, 125min
 Performance, dcterms:creator, David Nixon   
 Performance, crm:E52 Time-Span, 2011  
 Performance, schema:genre,  Performing arts  

@@ -5,11 +5,13 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>. 
 
 ex:Performance a crm:E5_Event ;
     crm:P2_has_type "Dance" ;
     crm:P102_has_title "Cleopatra" ;
     schema:genre schema:PerformingArts ;
+    schema:duration "125min"^^xsd:string;
     dcterms:creator "David Nixon" ;
     crm:E74_Group ex:NorthernBalletsCompanys ;
     crm:E52_Time_Span "2011" .
