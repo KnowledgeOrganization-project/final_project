@@ -3,9 +3,10 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix mo: <http://purl.org/ontology/mo/> .
 @prefix dct: <http://purl.org/dc/terms/>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix owl: <http://www.w3.org/2002/07/owl#>. 
-#@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 ex:CleopatraSong a mo:Track ;
     owl:sameAS <https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCleopatra_%28Samira_Efendi_song%29&sid=63960> ;
@@ -15,15 +16,16 @@ ex:CleopatraSong a mo:Track ;
         a mo:MusicArtist ;
         mo:performer_name "Samira Efendi" 
         ] ;
-    mo:genre ex:PopMusicGenre ;
+    mo:genre dbr:Pop_music ;
     mo:availableAs mo:Streaming ;
     dct:language "English" ; # Alternative: crm:P72_has_language ex:English ; (ex:English a crm:E56_Language) .
     dct:publisher "BMF Records" ;
     dct:date "2020"^^xsd:gYear .
 
-#ex:English a crm:E56_Language .
-ex:CleopatraVII a ex:Person ;
-    rdfs:label "Cleopatra VII" .
-
-ex:PopMusicGenre a mo:MusicGenre ;
-    dct:title "Pop Music" .
+ex:CleopatraVII a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/67762941> ;
+    owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
+    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
+    #bibframe:family ex:MarkAnthony ;
+    #bibframe:family ex:JuliusCaesar ;
+    rdfs:label "Cleopatra VII Thea Philopator" . 
