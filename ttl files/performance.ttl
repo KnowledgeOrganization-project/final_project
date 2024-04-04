@@ -1,5 +1,4 @@
 @prefix ex: <http://cleopatra-project.org/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -12,11 +11,11 @@ ex:Performance a crm:E5_Event ;
     crm:P102_has_title "Cleopatra" ;
     schema:genre schema:PerformingArts ;
     schema:duration "125min"^^xsd:string;
-    dcterms:creator "David Nixon" ;
-    crm:E74_Group ex:NorthernBalletsCompanys ;
+    schema:creator <http://cleopatra-project.org/person/David_Nixon >;
+    schema:productionCompany <http://cleopatra-project.org/organization/NorthernBalletsCompanys> ;
     crm:E52_Time_Span "2011" .
 
-ex:NorthernBalletsCompanys a crm:E74_Group ;
+ex:NorthernBalletsCompanys a schema:productionCompany ;
     owl:sameAs <https://northernballet.com> ;
     crm:P53_has_former_or_current_location ex:UnitedStates ;
     crm:P48_has_preferred_identifier "Northern Ballet’s company" .
