@@ -18,7 +18,7 @@
           margin: 20px;
         }
         h1 {
-          color: #333;
+          color: #db590e;
           text-align: center;
         }
         .act {
