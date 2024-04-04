@@ -1,8 +1,9 @@
 SUBJECT,PREDICATE,OBJECT
 Movie,dbo:type, Movie  
-Movie,dcterms:creator, Joseph L. Mankiewicz   
-Movie,crm:P108_has_produced, 20th Century Studios 
-Movie,dcterms:created, 1963
+Movie,schema:director, Joseph L. Mankiewicz  
+Movie,schema:producer, Walter Wanger 
+Movie,schema:productionCompany, 20th Century Studios 
+Movie,schema:datePublished, 1963
 Movie,dcterms:subject, Cleopatra VII
 Movie,dcterms:title, Cleopatra
 Movie,crm:E53_Place, United States  

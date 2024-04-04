@@ -1,27 +1,25 @@
 @prefix ex: <http://cleopatra-project.org/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix dct: <http://purl.org/dc/terms/>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix schema: <http://schema.org/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>. 
-@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix dcterms: <https://purl.org/dc/terms/>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>. 
-
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 ex:CleopatraMovie a dbo:Movie ;
     dcterms:title "Cleopatra"^^xsd:string ;
-    dcterms:creator <https://dbpedia.org/page/Joseph_L._Mankiewicz> ;
-    dcterms:created "1963"^^xsd:gYear;
-    schema:genre schema:Colossal ;
-    schema:duration "217min"^^xsd:string;
-    crm:E53_Place "United States" ;
+    schema:director <http://cleopatra-project.org/person/Joseph_L_Mankiewie> ;
+    schema:producer <http://cleopatra-project.org/person/Walter_Wanger> ;
+    schema:datePublished "1963"^^xsd:date ;
+    schema:genre ex:Colossal ;
+    schema:duration "217min"^^xsd:string ;
+    crm:E53_Place ex:UnitedStates ;
     dct:language "English" ;
-    crm:P108_has_produced ex:20th_Century_Studios ;
+    schema:productionCompany <http://cleopatra-project.org/organization/20th_Century_Studios> ;
     dcterms:subject ex:CleopatraVII .
-
 
 ex:UnitedStates a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/6252001/united-states.html> .
@@ -34,8 +32,3 @@ ex:CleopatraVII a ex:Person ;
 
 ex:Colossal a schema:Genre ;
     schema:name "Colossal" .
-
-ex:20th_Century_Studios a foaf:Organization ;
-    owl:sameAs <https://www.britannica.com/topic/20th-Century-Studios> .
-
-
