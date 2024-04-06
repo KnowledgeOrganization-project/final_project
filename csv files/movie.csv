@@ -1,10 +1,12 @@
 SUBJECT,PREDICATE,OBJECT
 Movie,dbo:type, Movie  
-Movie,dcterms:creator, Joseph L. Mankiewicz   
-Movie,crm:P108_has_produced, 20th Century Studios 
-Movie,dc:date, 1963
-Movie,dcterms:subject, Cleopatra 
-Movie,dct:language, English
-Movie,dc:title, Cleopatra
+Movie,schema:director, Joseph L. Mankiewicz  
+Movie,schema:producer, Walter Wanger 
+Movie,schema:productionCompany, 20th Century Studios 
+Movie,schema:datePublished, 1963
+Movie,dcterms:subject, Cleopatra VII
+Movie,dcterms:title, Cleopatra
 Movie,crm:E53_Place, United States  
+Movie,schema:duration, 217min
 Movie,schema:genre, Colossal
+Movie,dct:language, English
