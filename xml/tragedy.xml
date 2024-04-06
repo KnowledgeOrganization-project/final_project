@@ -54,6 +54,7 @@
                 <editorialDecl>
                     <p>Line breaks, paragraph breaks, and indentations have been preserved within the transcription. The layout of the page has been preserved whenever possible. Also the sinagnin for tonic entonation present in the printed text was preserved with the same use of italic notation. Abbreviations and spellings have been maintained within the transcriptions, including the use of "the long s" configuring in a "f". In this case, and others that involve the use of a old form of the english language, it was provide encoding with the choice of normalisation. The text encoded in lines according the TEI guidelines for drama texts.</p>
                 </editorialDecl>
+            </encodingDesc>
         </fileDesc>
     </teiHeader>
     <text xml:lang="en">
