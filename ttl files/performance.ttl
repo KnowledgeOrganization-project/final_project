@@ -9,16 +9,16 @@
 ex:Performance a crm:E5_Event ;
     crm:P2_has_type "Dance" ;
     crm:P102_has_title "Cleopatra" ;
-    schema:genre schema:PerformingArts ;
+    schema:genre ex:Ballet ;
     schema:duration "125min"^^xsd:string;
-    schema:creator <http://cleopatra-project.org/person/David_Nixon >;
-    schema:productionCompany <http://cleopatra-project.org/organization/NorthernBalletsCompanys> ;
+    schema:creator <http://cleopatra-project.org/person/David_Nixon>;
+    schema:productionCompany ex:NorthernBalletsCompanys ;
     crm:E52_Time_Span "2011" .
 
 ex:NorthernBalletsCompanys a schema:productionCompany ;
-    owl:sameAs <https://northernballet.com> ;
+    owl:sameAs <http://northernballet.com> ;
     crm:P53_has_former_or_current_location ex:UnitedStates ;
     crm:P48_has_preferred_identifier "Northern Ballet’s company" .
 
-ex:PerformingArts a schema:Genre ;
-    owl:sameAs <https://dbpedia.org/page/Performing_arts> .
+ex:Ballet a schema:Genre ;
+    owl:sameAs <http://dbpedia.org/page/Ballet> .
