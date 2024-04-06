@@ -1,8 +1,10 @@
-<TEI>
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="en">
         <fileDesc>
             <titleStmt>
-                <title>THE TRAGEDIE OF Anthonie, and Cleopatra.</title>
+                <title>THE TRAGEDIE OF Anthonie, and Cleopatra. Act 1, Scene 3.</title>
                 <author>Shakespeare, William, 1564-1616</author>
             </titleStmt>
             <publicationStmt>
@@ -18,17 +20,9 @@
                 </availability>
             </publicationStmt>
             <sourceDesc>
-                <bibl>
-                    Parcial version of -- Act 1 Scene 3
-                    <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>
-                </bibl>
-                <bib>
-                This version was developed in the context of "Cleopatra Project" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
-                within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna, based in the specified printed edition.
-                </bib>
                 <bibfull>
                     <titleStmt>
-                        <title>THE TRAGEDIE OF Anthonie, and Cleopatra.</title>
+                        <title>Shakespeare's Tragedy of Antony and Cleopatra</title>
                         <subtitle>with Alterations, and with Additions from Dryden</subtitle>
                         <author>Shakespeare, William, 1564-1616</author>
                         <editor role="editor">Dryden, John, 1631-1700</editor>
@@ -39,12 +33,11 @@
                         <pubPlace>London</pubPlace>
                         <date>1813</date>
                     </publicationStmt>
+                    <availabity status="free"></availabity>
                     <notesStmt>
                         <note anchored="true">
                         In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
-                        To see more <address><url>https://en.wikipedia.org/wiki/Long_s</url></address>.
-                        
-                        
+                            <sourceNote><address><url>https://en.wikipedia.org/wiki/Long_s</url></address></sourceNote>
                         </note>
                         <note anchored="true">
                         John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
@@ -53,20 +46,36 @@
                     </notesStmt>
                 </bibfull>
             </sourceDesc>
+            <encodingDesc>
+                <projectDesc>
+                    <p>A transcription of Shakespeare's Tragedy of Antony and Cleopatra Scene 3 from the Act 1 acording <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>. This version was developed in the context of "Cleopatra Project" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
+                    within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna, based on the specified printed edition.</p>
+                </projectDesc>
+                <editorialDecl>
+                    <p>Line breaks, paragraph breaks, and indentations have been preserved within the transcription. The layout of the page has been preserved whenever possible. Also the sinagnin for tonic entonation present in the printed text was preserved with the same use of italic notation. Abbreviations and spellings have been maintained within the transcriptions, including the use of "the long s" configuring in a "f". In this case, and others that involve the use of a old form of the english language, it was provide encoding with the choice of normalisation. The text encoded in lines according the TEI guidelines for drama texts.</p>
+                </editorialDecl>
         </fileDesc>
     </teiHeader>
-    <text>
+    <text xml:lang="en">
         <body>
             <pb n="vv6v"/>
-            <head>THE TRAGEDIE OF Anthonie, and Cleopatra.</head>
+            <head>Antony and Cleopatra</head>
             <milestone unit="compo" n="B"/>
             <lb n="1"/>
+            <head>C​HARACTERS</head>
+                <list>
+                    <item>CLEOPATRA the Queen of Egypt and Antony's lover</item>
+                    <item>CHARMIAN, Cleopatra’s faithful attendant</item>
+                    <item>IRAS, Cleopatra’s faithful attendant</item>
+                    <item>ALEXAS, Cleopatra’s trusted advisor</item>
+                    <item>ANTONY, Roman General and ruller that is in love with Cleopatra</item>
+                </list>
             <div>
                 <head rend="italic">Act I Scene 3</head>
                 <lb n="2"/>
                 <sp>
                     <scene><hi rend="italic">A Room </hi> in CLEOPATRA'S Palace </scene>
-                    <stage rend="italic">CLEOPATRA, CHARMION, IRAS, <hi rend="italic">and</hi> ALEXAS <hi rend="italic"> discover'd</hi>.</stage>
+                    <stage rend="italic">CLEOPATRA, CHARMIAN, IRAS, <hi rend="italic">and</hi> ALEXAS <hi rend="italic"> discover'd</hi>.</stage>
                     <lb n="3"/>
                 </sp>
                 <sp>
@@ -79,7 +88,13 @@
                 <sp>
                     <speaker rend="italic">Char.</speaker>
                     <ab>
-                        I did not fee him fince.
+                        I did not <choice>
+                                        <abbr>ſ</abbr>
+                                        <expan>s</expan>
+                                    </choice>ee him <choice>
+                                        <abbr>ſ</abbr>
+                                        <expan>s</expan>
+                                </choice>ince. 
                         <lb n="5"/>
                     </ab>
                 </sp>
@@ -92,15 +107,46 @@
                         <lb n="7"/>
                         Whose with him, what he does:
                         <lb n="8"/>
-                        I did not fend you. If you find him fad,
+                            I did not <choice>
+                                    <abbr>ſee</abbr>
+                                    <expan>see</expan>
+                                </choice> him <choice>
+                                    <abbr>ſince</abbr>
+                                    <expan>since</expan>
+                                </choice>.
+                        <lb n="5"/>
+                    </ab>
+                </sp>
+                <sp>
+                    <speaker rend="italic">Cleo.</speaker>
+                    <ab>
+                        <hi><i>To</i> Alexas</hi>
+                        <lb n="6"/>
+                        See where he is,
+                        <lb n="7"/>
+                        Whose with him, what he does:
+                        <lb n="8"/>
+                        I did not <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>end you. If you find him <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ad,
                         <lb n="9"/>
                         Say I am dauncing: if in mirth, report
                         <lb n="10"/>
-                        That I am fudden fick. Quick, and returne.
+                        That I am <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>udden <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ick. Quick, and returne.
                         <lb n="11" rend="rj"/>
                     </ab>
                 </sp>
-                    <hi rend="italic">Exit Alexas.</hi>
+                    <stage><hi rend="italic">Exit Alexas.</hi></stage>
                     <lb n="12"/>
                 <sp>
                     <speaker rend="italic">Char.</speaker>
@@ -116,7 +162,10 @@
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        What fhould I do I do not?
+                        What <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hould I do I do not?
                         <lb n="16" rend="rj"/>
                     </ab>
                 </sp>
@@ -130,7 +179,10 @@
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        Thou teacheft like a fool:-the way to lose him.
+                        Thou teache<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t like a fool:-the way to lose him.
                         <lb n="18"/>
                     </ab>
                 </sp>
@@ -147,7 +199,13 @@
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        I am sifk, and fullen.
+                        I am si<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>k, and <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ullen.
                         <lb n="21"/>
                         <hi rend="italic">to Charmain aside.</hi>
                         <lb n="22"/>
@@ -156,32 +214,56 @@
                 <sp>
                     <speaker rend="italic">An.</speaker>
                     <ab>
-                        I am forry to give breathing to my purpofe.
+                        I am <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>orry to give breathing to my purpo<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>e.
                         <lb n="23"/>
                     </ab>
                 </sp>
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        Help me away dear Charmian, I fhall fall,
+                        Help me away dear Charmian, I <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hall fall,
                         <lb n="24"/>
-                        It cannot be thus long, the fides of Nature
+                        It cannot be thus long, the <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ides of Nature
                         <lb n="25"/>
-                        Will not fuftaine it.
+                        Will not <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>u<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>taine it.
                         <lb n="26"/>
                     </ab>
                 </sp>
                 <sp>
                     <speaker rend="italic">Ant.</speaker>
                     <ab>
-                        Now my deareft queen.
+                        Now my deare<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t queen.
                         <lb n="27"/>
                     </ab>
                 </sp>
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        Pray you, ftand farther from me.
+                        Pray you, <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>tand farther from me.
                         <lb n="28"/>
                     </ab>
                 </sp>
@@ -195,13 +277,25 @@
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        I know, by that fame eye ther's some good news.
+                        I know, by that <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ame eye ther's some good news.
                         <lb n="30"/>
-                        What fays the marry'd woman? You may go?
+                        What <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ays the marry'd woman? You may go?
                         <lb n="31"/>
-                        Would fhe had never giv'n you levue to come!
+                        Would <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>he had never giv'n you levue to come!
                         <lb n="32"/>
-                        Let her not fay, 'tis <i>I</i> that keepe you heere,
+                        Let her not <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ay, 'tis <i>I</i> that keepe you heere,
                         <lb n="33"/>
                         I have no power vpon you: her's you are.
                         <lb n="34"/>
@@ -210,7 +304,10 @@
                 <sp>
                     <speaker rend="italic">Ant.</speaker>
                     <ab>
-                        The Gods beft know,
+                        The Gods be<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t know,
                         <lb n="35"/>
                     </ab>
                 </sp>
@@ -219,9 +316,18 @@
                     <ab>
                         O, never was there queen
                         <lb n="36"/>
-                        So mightily betray'd! Yet at the firft,
+                        So mightily betray'd! Yet at the fir<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t,
                         <lb n="37"/>
-                        I faw the treafons planted.
+                        I <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>aw the trea<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ons planted.
                         <lb n="38"/>
                     </ab>
                 </sp>
@@ -235,37 +341,82 @@
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        Why fhould I thinke you can be mine, and true,
+                        Why <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hould I thinke you can be mine, and true,
                         <lb n="40"/>
-                        Though you in fwearing, fhake the throaned gods
+                        Though you in <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>wearing, <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hake the throaned gods
                         <lb n="41"/>
-                        Who have been falfe to Fulvia? Riotous madnefs,
+                        Who have been fal<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>e to Fulvia? Riotous madne<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>s,
                         <lb n="42"/>
-                        To be entangl'd with thofe mouth-made vows,
+                        To be entangl'd with tho<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>e mouth-made vows,
                         <lb n="43"/>
-                        Which break themfelves in fwearing!
+                        Which break them<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>elves in <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>wearing!
                         <lb n="44"/>
                     </ab>
                 </sp>
                 <sp>
                     <speaker rend="italic">Ant.</speaker>
                     <ab>
-                        Moft fweet queen.
+                        Mo<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>weet queen.
                         <lb n="45"/>
                     </ab>
                 </sp>
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        Nay pray you, feek no colour for your going,
+                        Nay pray you, <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>eek no colour for your going,
                         <lb n="46"/>
-                        But bid farewel, and go: when you fu'd ftaying,
+                        But bid farewel, and go: when you <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>u'd <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>taying,
                         <lb n="47"/>
                         Then was the time for words. No going then;
                         <lb n="48"/>
                         Eternity was in our lips and eyes;
                         <lb n="49"/>
-                        Blifs in our brows, and none our parts fo poor,
+                        Bli<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>s in our brows, and none our parts <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>o poor,
                         <lb n="50"/>
                         But was a race of Heaven. 
                     </ab>
@@ -275,15 +426,33 @@
                     <ab>
                         Hear me queen;
                         <lb n="51"/>
-                        The ftrong necessity of time, commands
+                        The <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>trong necessity of time, commands
                         <lb n="52"/>
-                        Our feruices awhile; but my full heart
+                        Our <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ervices awhile; but my full heart
                         <lb n="53"/>
-                        Remaines in ufe with you. Our Italy,
+                        Remaines in u<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>e with you. Our Italy,
                         <lb n="54"/>
-                        Shines o'er with civil fwords; my more particular,
+                        Shines o'er with civil <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>words; my more particular,
                         <lb n="55"/>
-                        And that which moft with you fhould safe my going,
+                        And that which mo<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t with you <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hould safe my going,
                         <lb n="56"/>
                         Is Fulvia's death.
                         <lb n="57"/>
@@ -306,13 +475,37 @@
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        O moft false Love!
+                        O mo<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t false Love!
                         <lb n="60"/>
-                        Where be the facred vials thou fhould'ft fill
+                        Where be the <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>acred vials thou <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hould'<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t fill
                         <lb n="61"/>
-                        With forrowfull water? Now I fee, I fee,
+                        With <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>orrowfull water? Now I <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ee, I <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ee,
                         <lb n="62"/>
-                        In Fulvia's death, how mine fhall be receiv'd.
+                        In Fulvia's death, how mine <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hall be receiv'd.
                         <lb n="63"/>
                     </ab>
                 </sp>
@@ -321,15 +514,33 @@
                     <ab>
                         Quarrell no more, but be prepar'd to know
                         <lb n="64"/>
-                        The purpofes I bear: which are, or ceafe,
+                        The purpo<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>es I bear: which are, or cea<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>e,
                         <lb n="65"/>
-                        As you fhall give advice. Now, by the fire
+                        As you <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hall give advice. Now, by the fire
                         <lb n="66"/>
                         That quickens Nillus slime, I go out hence
                         <lb n="67"/>
-                        Thy foldier, fervant, making peace or war,
+                        Thy <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>oldier, <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ervant, making peace or war,
                         <lb n="68"/>
-                        As thou affect'ft.
+                        As thou affect'<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t.
                         <lb n="69"/>
                     </ab>
                 </sp>
@@ -349,7 +560,10 @@
                     <ab>
                         My precious queen forbear,
                         <lb n="73"/>
-                        And give true evidence to his love, which ftands
+                        And give true evidence to his love, which <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>tands
                         <lb n="74"/>
                         An honourable Triall.
                         <lb n="75"/>
@@ -360,13 +574,28 @@
                     <ab>
                         So was Fulvia told:
                         <lb n="76"/>
-                        I pr'ythee turne afide, and weep for her,
+                        I pr'ythee turne a<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ide, and weep for her,
                         <lb n="77"/>
-                        Then bid adieu to me, and fay the tears
+                        Then bid adieu to me, and <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ay the tears
                         <lb n="78"/>
-                        Belong to Ægypt. Good now, play one fcene
+                        Belong to Ægypt. Good now, play one <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>cene
                         <lb n="79"/>
-                        Of excellent diffembling: and let it looke
+                        Of excellent di<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice><choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>embling: and let it looke
                         <lb n="80"/>
                         Like perfect honor.
                         <lb n="81"/>
@@ -389,20 +618,32 @@
                 <sp>
                     <speaker rend="italic">Ant.</speaker>
                     <ab>
-                        Now, by my fword,
+                        Now, by my <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>word,
                         <lb n="84"/>
                     </ab>
                 </sp>
                 <sp>
                     <speaker rend="italic">Cleo.</speaker>
                     <ab>
-                        And target, -- ftill he mends;
+                        And target, -- <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>till he mends;
                         <lb n="85"/>
-                        But this is not the beft. Looke pr'ythee, Charmian,
+                        But this is not the be<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t. Looke pr'ythee, Charmian,
                         <lb n="86"/>
                         How this Herculean Roman does become
                         <lb n="87"/>
-                        The carriage of his chafe.
+                        The carriage of his cha<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>e.
                         <lb n="88"/>
                     </ab>
                 </sp>
@@ -418,7 +659,10 @@
                     <ab>
                         Courteous Lord, one word.
                         <lb n="90"/>
-                        Sir, you and I muft part; but that's not it;
+                        Sir, you and I mu<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t part; but that's not it;
                         <lb n="91"/>
                         Sir, you and I have lov'd,-- but there's not it;
                         <lb n="92"/>
@@ -433,11 +677,29 @@
                 <sp>
                     <speaker rend="italic">Ant.</speaker>
                     <ab>
-                        But that your majefty
+                        But that your maje<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ty
                         <lb n="96"/>
-                        Holds idlenefse your fubject, I fhould take you
+                        Holds idlene<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>se your <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ubject, I <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>hould take you
                         <lb n="97"/>
-                        For idlenefse itfelf.
+                        For idlene<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>se it<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>elf.
                         <lb n="98"/>
                     </ab>
                 </sp>
@@ -446,13 +708,31 @@
                     <ab>
                         Your Honor calles you hence,
                         <lb n="99"/>
-                        Therefore be deaf to my unpity'd folly,
+                        Therefore be deaf to my unpity'd <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>olly,
                         <lb n="100"/>
-                        And all the gods go with you! On your fword
+                        And all the gods go with you! On your <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>word
                         <lb n="101"/>
-                        Sit laurell'd victory, and fmooth fuccefs
+                        Sit laurell'd victory, and <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>mooth <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>ucce<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>s
                         <lb n="102"/>
-                        Be ftrew'd before your feet!
+                        Be <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>trew'd before your feet!
                         <lb n="103"/>
                     </ab>
                 </sp>
@@ -461,9 +741,24 @@
                     <ab>
                         Let us go.
                         <lb n="104"/>
-                        Come: Our feparation fo abides and flies,
+                        Come: Our <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>eparation <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>o abides and <choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>lies,
                         <lb n="105"/>
-                        That thou, refiding here, go'ft yet with me;
+                        That thou, re<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>iding here, go'<choice>
+                            <abbr>ſ</abbr>
+                            <expan>s</expan>
+                        </choice>t yet with me;
                         <lb n="106"/>
                         And I, hence fleeting, here remain with thee.
                         <lb n="107"/>
