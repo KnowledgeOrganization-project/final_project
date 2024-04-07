@@ -26,8 +26,7 @@ ex:UnitedStates a crm:E53_Place ;
 ex:CleopatraVII a ex:Person ;
     rdfs:label "Cleopatra VII" ;
     owl:sameAs <http://viaf.org/viaf/67762941> ;
-    owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
-    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> .
+    owl:sameAs <https://dbpedia.org/page/Cleopatra> .
 
 ex:Colossal a schema:Genre ;
     schema:name "Colossal" .
