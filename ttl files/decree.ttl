@@ -32,10 +32,10 @@ ex:RoyalDecree a foaf:Document ;
     foaf:primaryTopic ex:InternationalTrade ;
     foaf:maker ex:AncientEgyptians ;
     crm:P3_has_note ex:CleopatraSignature ;
-    crm:P8_took_place_on_or_within ex:Alexandria ;
+    crm:P8_took_place_on_or_within ex:Egypt ;
     bibframe:originDate "Before february 23th 33BC" ;
     dcterms:language ex:KoineGreek ;
-    crm:P53_has_former_or_current_location ex:EgyptianMuseumofBerlin ;
+    crm:P53_has_current_location ex:EgyptianMuseumofBerlin ;
     
 ex:papyrus a crm:E57_Material ;
     crm:P2_has_type "papyrus" ;
@@ -84,10 +84,6 @@ ex:JuliusCaesar ;
 
 ex:Egypt a crm:dcterms:Location ;
     owl: sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
-
-ex:Alexandria a dcterms:Location ;
-    owl: sameAs: <https://www.geonames.org/361058/alexandria.html>; 
-    foaf:member ex:Egypt .
 
 ex:KoineGreek a dcterms:language ;
     owl: sameAs <https://www.britannica.com/topic/Koine-Greek-language>.
