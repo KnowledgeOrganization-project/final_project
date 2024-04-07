@@ -1,12 +1,10 @@
 Subject ,Predicate ,Object 
 Statue of Cleopatra ,crm:P62_depicts ,Cleopatra 
-Statue of Cleopatra ,dcterms:Provenance ,1889 
-Statue of Cleopatra ,crm:P23_surrendered_title_through ,Joseph William Drexel 
-Statue of Cleopatra ,crm:P50_has_current_keeper ,Metropolitan Museum of Art 
-Statue of Cleopatra ,crm:E57_Material ,Dolomite limestone 
 Statue of Cleopatra ,crm: P2_has_type ,Artwork 
 Statue of Cleopatra ,crm:P4_has_time-span ,Ptolemaic period  
-Statue of Cleopatra ,crm:P8_took_place_on_or_within ,Egypt 
+Statue of Cleopatra ,crm:P65_shows_visual_item ,Cleopatra’s Inscription 
+Statue of Cleopatra ,crm:P45_consists_of ,Dolomite limestone 
 Statue of Cleopatra ,P108_has_produced ,Ancient Egypticians 
-Statue of Cleopatra ,crm:P113_removed ,Colonialism 
-Statue of Cleopatra ,53_has_former_or_current_location ,New York 
+Statue of Cleopatra ,crm:P8_took_place_on_or_within ,Egypt 
+Statue of Cleopatra ,crm:P50_has_current_keeper ,Metropolitan Museum of Art 
+Statue of Cleopatra ,crm:P23_surrendered_title_through ,Joseph William Drexel 
