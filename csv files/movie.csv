@@ -9,4 +9,4 @@ Movie,dcterms:title, Cleopatra
 Movie,crm:E53_Place, United States  
 Movie,schema:duration, 217min
 Movie,schema:genre, Colossal
-Movie,dct:language, English
+Movie,schema:language, English
