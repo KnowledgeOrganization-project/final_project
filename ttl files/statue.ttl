@@ -1,4 +1,4 @@
-@prefix ex: <http://cleopatra-project.org/>.
+@base <http://w3id.org/unveiling-cleopatra.org/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
@@ -6,58 +6,52 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix schema: <http://schema.org/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix bibframe:  <https://www.loc.gov/bibframe/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-ex:Statue a crm:E24_Physical_Human_Made_Thing ;
-    crm:P62_depicts ex:CleopatraVII ;
+<item/statue> a crm:E24_Physical_Human_Made_Thing ;
+    crm:P62_depicts <person/CleopatraVII> ;
     crm:P2_has_type "Artwork" ;
-    crm:P4_has_time-span "TimeSpan" ;
-    crm:P65_shows_visual_item ex:CleopatraInscription;
-    crm:P45_consists_of ex:domolite ;
-    crm:P108_has_produced ex:AncientEgyptians ;
-    crm:P8_took_place_on_or_within ex:Egypt ;
-    crm:P50_has_current_keeper ex:MetropolitanMuseumofArt ;
-    crm:P23_surrendered_title_through ex:donation ;
+    crm:P4_has_time-span <timespan/Ptolemaicperiod> ;
+    crm:P65_shows_visual_item "Cleopatra Inscription";
+    crm:P45_consists_of "Dolomite Limestone" ;
+    crm:P108_has_produced <agent/AncientEgyptians> ;
+    crm:P8_took_place_on_or_within <place/Egypt> ;
+    crm:P50_has_current_keeper <agent/MetropolitanMuseumofArt> ;
+    crm:P23_surrendered_title_through <event/donation> .
 
-ex:CleopatraVII a crm:E21_Person ;
-    owl: sameAs <http://viaf.org/viaf/67762941> ;
-    owl: sameAs <https://dbpedia.org/page/Cleopatra> ;
-    owl: sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> .    
+<person/CleopatraVII> a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/67762941> ;
+    owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
+    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
+    bibframe:family <person/MarkAntony> ;
+    bibframe:family <person/JuliusCaesar> ;
+    rdfs:label <http://w3id.org/unveiling-cleopatra.org/label/QueenofEgypt> .
 
-ex:dolomite a crm:E57_Material ;
-    crm:P2_has_type "Domolite limestone" ;
-    owl: sameAs <https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300011348>.
 
-ex:Egypt a crm:E53_Place ;
-    owl: sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
+<place/Egypt> a crm:E53_Place ;
+    owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
     
-ex:TimeSpan a crm:E4_Period ;
-    crm:P82a_begin_of_the_begin "−305"^^xsd:gYear ;
-    crm:P82b_end_of_the_end "−30"^^xsd:gYear .
+<timespan/Ptolemaicperiod> a crm:E4_Period ;
+    crm:P82a_begin_of_the_begin "332-10-01"^^xsd:date ;
+    crm:P82b_end_of_the_end "30-08-10"^^xsd:date .
 
-ex:AncientEgyptians a crm:E74_Group ;
-    rdf:type ex:Civilization ;
-    rdfs:label "Ancient Egyptians" .
+<agent/AncientEgyptians> a foaf:Group ;
+    owl:sameAs: <https://www.britannica.com/place/ancient-Egypt/Macedonian-and-Ptolemaic-Egypt-332-30-bce> .
 
-ex:CleopatraInscription a crm:E34_Inscription;
-    crm:P190_has_symbolic_content ex:CleopatraVII
-    rdfs:label "Cleopatra"
-    crm:P3_has_note '"The cartouche actually reading "Cleopatra" on this statue's arm would be a highly unusual occurrence, and is, moreover, incorrectly oriented, so that it is probably a modern addition."'.
-
-ex:MetropolitanMuseumofArt a crm:E39_Actor ; 
-    owl: sameAs <https://www.metmuseum.org/> ; 
-    crm:P53_has_former_or_current_location ex:NewYork ;
+<agent/MetropolitanMuseumofArt> a crm:E39_Actor ; 
+    owl:sameAs <https://www.metmuseum.org/> ; 
+    crm:P53_has_former_or_current_location <place/NewYork> ;
     crm:P48_has_preferred_identifier "TheMET" .
 
-ex:NewYork acrm:E53_Place
-    owl: sameAs <https://www.geonames.org/5128581/new-york-city.html>
+<place/NewYork> a crm:E53_Place ;
+    owl:sameAs <https://www.geonames.org/5128581/new-york-city.html> .
 
-ex:donation a crm:E08_Acquisitions ;
-    crm:P29_custody_received_by ex:MetrpolitanMuseumofArt ;
-    crm:P30_transferred_custody_of  ex:Joseph_Willian_Drexel ;
+<event/donation> a crm:E08_Acquisitions ;
+    crm:P29_custody_received_by <agent/MetropolitanMuseumofArt> ;
+    crm:P30_transferred_custody_of  "Joseph Willian Drexel" ;
     dct:date "1889"^^xsd:gYear .
 
-ex:Joseph_Willian_Drexel a crm:E21_Person ;
-    owl: sameAs <https://viaf.org/viaf/20908464/>;
 
 
 
