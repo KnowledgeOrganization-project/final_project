@@ -1,5 +1,5 @@
 #example in FRBR
-@prefix ex: <http://unveiling-project.org/>.
+@base <http://w3id.org/unveiling-cleopatra.org/>.
 @prefix frbr: <http://purl.org/vocab/frbr/core#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix schema: <http://schema.org/>.

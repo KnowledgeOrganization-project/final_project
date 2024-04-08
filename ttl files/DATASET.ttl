@@ -1,0 +1,133 @@
+@base <https://w3id.org/unveiling-cleopatra.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbp: <https://dbpedia.org/property/>.
+@prefix dbc: <http://dbpedia.org/resource/Category/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix schema: <http://schema.org/>.
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+
+                #Cleopatra VII
+<person/CleopatraVII> a foaf:Person ;
+    owl:sameAs dbr:Cleopatra ;
+    dbp:fullName "Cleopatra VII Thea Philopator" ; 
+    dbp:birthDate "69/70 BC" ;
+    dbp:deathDate "30 BC" ;
+    dbp:birthPlace "Alexandria" ;
+    dbp:dynasty dbr:Ptolemaic_dynasty ;
+    foaf:member <agent/AncientEgyptians> ;
+    dbp:spouse <person/MarkAnthony> ;
+    dbp:spouse dbr:Ptolemy_XIII_Theos_Philopator ;
+    dbp:spouse dbr:Ptolemy_XIV ;
+    foaf:knows <person/JuliusCaesar> ;
+    foaf:occupation "Queen of Egypt" ;
+    dct:subject dbc:Female_pharaohs .
+
+
+                #Mark Antony
+<person/MarkAnthony> a foaf:Person ;
+    owl:sameAs dbr:Mark_Antony ;
+    foaf:member <place/RomanRepublic> ;
+    dbp:spouse <person/CleopatraVII> .
+
+
+                #Julius Caesar
+<person/JuliusCaesar> a foaf:Person ;
+    owl:sameAs dbr:Julius_Caesar ;
+    foaf:knows <person/CleopatraVII> .
+
+
+                #Ancient Egyptians
+<agent/AncientEgyptians> a crm:E39_Actor ;
+    rdf:type <agent/Civilization> ;
+    rdfs:label "Ancient Egyptians" .
+
+                #Ptolemaic dynasty
+<agent/PtolemaicDynasty> a foaf:Group ;
+    owl:sameAs dbr:Ptolemaic_dynasty ;
+    dbp:country <place/Egypt> .
+
+                #Roman Republic
+
+                #Egypt
+<place/Egypt> a crm:E53_Place ;
+    owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> ;
+    skos:broader <place/Eastern_Mediterranean> .
+
+                
+                #Eastern Mediterranean
+<place/Eastern_Mediterranean> a <place/> ;
+    skos:narrower <place/Egypt> .
+
+
+                #Ptolemaic Period
+<time-span/PtolemaicPeriod>  a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "305 BC"^^xsd:gYear ;
+    crm:P82b_end_of_the_end "30 BC"^^xsd:gYear .
+
+                #PRINTED EDITION
+
+                #COIN
+
+                #STATUE
+
+                #SONG
+<item/CleopatraSong> a mo:Track ;
+    owl:sameAs <https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCleopatra_%28Samira_Efendi_song%29&sid=63960> ;
+    mo:recorded_as <https://musicbrainz.org/recording/3e7292fa-704e-445e-b93d-fc790a4d5f08> ;
+    dct:subject <person/CleopatraVII> ;
+    dct:title "Cleopatra" ;
+    mo:MusicArtist "Samira Efendi" ;
+    mo:genre dbr:Pop_music ;
+    mo:availableAs mo:Streaming ;
+    dct:language "English" ;
+    dct:publisher "BMF Records" ;
+    dct:date "2020"^^xsd:gYear .
+
+
+                #BRACELET 
+<item/Bracelet> a crm:E22_Man-Made_Object ;
+    crm:P2_has_type "ArchaeologicalArtifact" ;
+    crm:P45_consists_of [
+        a crm:E57_Material ;
+        rdfs:label "Gold"
+    ] ;
+    crm:P4_has_time-span <time-span/PtolemaicPeriod> ;
+    dct:provenance <place/Egypt> ;
+    crm:P50_has_current_keeper </agent/TheBritishMuseum> ;
+    crm:P32_used_general_technique "Ciselure" ;
+    crm:P32_used_general_technique "Incision" ;
+    crm:P32_used_general_technique "Twisting" ;
+    crm:P108_has_produced </agent/AncientEgyptians> ;
+    crm:P32_acquired_title_through <event/bequeathal> .
+
+</agent/TheBritishMuseum> a crm:E39_Actor ;
+    crm:P48_has_preferred_identifier "TheBritishMuseum" .
+
+<event/bequeathal> a crm:E10_Transfer_of_Custody ;
+    crm:P30_transferred_custody_of <agent/TheBritishMuseum> ;
+    crm:P31_has_modified <item/bracelet> ;
+    crm:P32_acquired_title_through "Sir Augustus Wollaston Franks" ;
+    dct:date "1897" .
+
+
+                #BOARD GAME 
+
+                #BALLET
+
+                #PAINTING
+
+                #MOVIE
+
+                #MANUSCRIPT
+
