@@ -1,4 +1,4 @@
-@prefix ex: <http://cleopatra-project.org/>.
+@prefix ex: <http://unveiling-project.org/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix mo: <http://purl.org/ontology/mo/> .
@@ -10,6 +10,7 @@
 
 ex:CleopatraSong a mo:Track ;
     owl:sameAS <https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCleopatra_%28Samira_Efendi_song%29&sid=63960> ;
+    mo:recorded_as <https://musicbrainz.org/recording/3e7292fa-704e-445e-b93d-fc790a4d5f08> ;
     dct:subject ex:CleopatraVII ;
     dct:title "Cleopatra" ;
     mo:performer [
