@@ -1,10 +1,12 @@
-Subject ,Predicate ,Object 
-Painting “The Meeting of Antony and Cleopatra” ,crm:P102_has_title ,“The Meeting of Antony and Cleopatra” 
-Painting “The Meeting of Antony and Cleopatra” ,crm:P62_depicts ,Cleopatra 
-Painting “The Meeting of Antony and Cleopatra” ,crm:P62_depicts ,Mark Anthony 
-Painting “The Meeting of Antony and Cleopatra” ,crm:P2_has_type ,Artwork 
-Painting “The Meeting of Antony and Cleopatra” ,crm:P127_has_broader_term ,Baroque 
-Painting “The Meeting of Antony and Cleopatra” ,bibframe:originDate ,1745-1747 
-Painting “The Meeting of Antony and Cleopatra” ,foaf:maker ,Giovanni Battista Tiepolo 
-Painting “The Meeting of Antony and Cleopatra” ,P23_surrendered_title_through ,Charles Wrightsman 
-Painting “The Meeting of Antony and Cleopatra” ,crm:P32_used_general_technique ,Oil on canvas 
+Subject,Predicate,Object
+The Meeting of Antony and Cleopatra,crm:P102_has_title,The Meeting of Antony and Cleopatra
+The Meeting of Antony and Cleopatra,crm:P138_represents,Cleopatra VII
+The Meeting of Antony and Cleopatra,crm:P138_represents,Mark Anthony
+The Meeting of Antony and Cleopatra,crm:P62_depicts,Eastern Mediterranean
+The Meeting of Antony and Cleopatra,crm:P2_has_type,Artwork
+The Meeting of Antony and Cleopatra,crm:P127_has_broader_term,Baroque
+The Meeting of Antony and Cleopatra,crm:P4_has_time-span,1745-1747
+The Meeting of Antony and Cleopatra,dcterms:creator,Giambattista Tiepolo
+The Meeting of Antony and Cleopatra,crm:P32_used_general_technique,Oil on canvas
+The Meeting of Antony and Cleopatra,crm:P50_has_current_keeper,The Metropolitan Museum
+The Meeting of Antony and Cleopatra,crm:P32_acquired_title_through,Mrs. Charles Wrightsman

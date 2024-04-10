@@ -6,29 +6,30 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix schema: <http://schema.org/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
-@prefix bibframe: <https://www.loc.gov/bibframe/>.
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix dbc: <http://dbpedia.org/resource/Category/> .
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix efrbroo: <https://erlangen-crm.org/efrbroo/> .
 
-<item/Artwork> a crm:E24_Physical_Human_Made_Thing ;
-    crm:P102_has_title "The Meeting of Antony and Cleopatra" ;
-    crm:P2_has_type "Artwork" ;    
-    crm:P62_depicts <person/CleopatraVII> ;
-    crm:P62_depicts <person/MarkAnthony> ;
+<item/Artwork> a efrbroo:F4_Manifestation_Singleton ;  #"Artwork" ;   
+    crm:P2_has_type crm:E36_Visual_Item ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q78638360> ;
+    crm:P102_has_title crm:E35_Title ; #"The Meeting of Antony and Cleopatra" ;
+    crm:P138_represents <person/CleopatraVII> ;
+    crm:P138_represents <person/MarkAnthony> ;
     crm:P62_depicts <place/Eastern_Mediterranean> ;
-    crm:P127_has_broader_term "Baroque" ;
-    bibframe:originDate "1745-1747"^^xsd:gYear ;
-    crm:P108_has_produced "GiambattistaTiepolo" ;
-    crm:P32_used_general_technique "Oil on canvas" ;
+    crm:P127_has_broader_term crm:E4_Period ; #"Baroque" ;
+    crm:P4_has_time-span crm:E52_Time-span ; #"1745-1747"^^xsd:gYear ; cdwa:creation_date "" 
+    crm:P108_has_produced <https://www.getty.edu/art/collection/person/103K3W> ; #"GiambattistaTiepolo"
+    crm:P32_used_general_technique crm:E55_Type ; #"Oil on canvas" ; #cdwa:medium "Oil on canvas"
     crm:P50_has_current_keeper </agent/TheMetropolitanMuseum> ;
-    crm:P32_acquired_title_through <event/bequeathal> ;
-    dct:subject dbc:Female_Shakespearean_characters .
+    crm:P32_acquired_title_through <event/bequeathal> .
 
 <event/bequeathal> a crm:E10_Transfer_of_Custody ;
     crm:P30_transferred_custody_of <agent/TheMetropolitanMuseum> ;
     crm:P31_has_modified <item/Artwork> ;
-    crm:P32_acquired_title_through "Mrs. Charles Wrightsman".
+    crm:P32_acquired_title_through crm:E39_Actor. #"Mrs. Charles Wrightsman".
 
-</agent/TheMetropolitanMuseum> a crm:E39_Actor ;
+</agent/TheMetropolitanMuseum> a crm:E74_Group ;
     gn:locatedIn <place/NewYork> ;
-    crm:P48_has_preferred_identifier "The Metropolitan Museum" .
+    rdfs:label "The Metropolitan Museum" .

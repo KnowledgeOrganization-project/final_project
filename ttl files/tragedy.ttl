@@ -1,0 +1,20 @@
+@base <https://w3id.org/unveiling-cleopatra.org/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dct: <http://purl.org/dc/elements/1.1/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix wrdc: <https://id.oclc.org/worldcat/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+<item/PrintedEdition> a crm:E31_Document ;
+    crm:P102_has_title "Shakespeare's Tragedy of Antony and Cleopatra" ;
+    crm:P94_has_created <https://viaf.org/viaf/96994048/> ; #William Shakespeare #this property represents the act of conceiving the intellectual content of the instance.
+    schema:contributor "John Dryden" ;
+    dct:type "Printed Edition" ; #dct:MediaType
+    crm:P72_has_language "English" ;
+    schema:genre "Theatral text" ;
+    dct:created "1607 ca." ;
+    dct:published "London" ;
+    dct:published "1813" ;
+    crm:P49_has_forme_or_current_keeper "Bavarian State Library" ;
+    owl:sameAs <https://search.worldcat.org/title/8915410> .

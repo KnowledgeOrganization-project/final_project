@@ -7,47 +7,45 @@
 @prefix schema: <http://schema.org/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>. 
 @prefix gn: <http://www.geonames.org/ontology#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix lido: <http://www.lido-schema.org/> .
 
-<item/Bracelet> a crm:E24_Physical_Human_Made_Thing ;
-    crm:P2_has_type "Archaeological Artifact" ;
-    crm:P45_consists_of [
-        a crm:E57_Material ;
-        rdfs:label "Gold"
-    ] ;
-    crm:P4_has_time-span <timespan/305BC-30BC> ;
+<item/Bracelet> crm:P2_has_type crm:E24_Physical_Human_Made_Thing ; #"Archaeological Artifact" ;
+    crm:E45_consists_of crm:E55_Type ; #made of "Gold"
+    crm:P4_has_time-span <timespan/PtolemaicPeriod> ;
     dct:provenance <place/Egypt> ;
     crm:P50_has_current_keeper </agent/TheBritishMuseum> ;
-    crm:P32_used_general_technique "Ciselure" ;
-    crm:P32_used_general_technique "Incision" ;
-    crm:P32_used_general_technique "Twisting" ;
-    crm:P108_has_produced </agent/AncientEgyptians> ;
+    crm:P32_used_general_technique crm:E55_Type ; #"Ciselure" ;
+    crm:P32_used_general_technique crm:E55_Type ; #"Incision" ;
+    crm:P32_used_general_technique crm:E55_Type ; #"Twisting" ;
+    dct:creator </agent/AncientEgyptians> ;
     crm:P32_acquired_title_through <event/bequeathal> .
 
 <place/Egypt> a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
 
-</agent/TheBritishMuseum> a crm:E39_Actor ;
+</agent/TheBritishMuseum> a crm:E74_Group ;
     crm:P48_has_preferred_identifier "The British Museum" .
 
 #</categories/gold> a crm:E57_Material ;
     #rdf:label "Gold" .
 
-<agent/AncientEgyptians> a crm:E39_Actor ;
-    rdf:type "Civilization" ;
+<agent/AncientEgyptians> a foaf:Group ; #"Civilization" 
     rdfs:label "Ancient Egyptians" .
 
 #for later (connection Cleopatra-bracelet): ex:CleopatraVII ex:belongTo ex:ancientEgyptians .
 
-<timespan/305BC-30BC> a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "305 BC"^^xsd:gYear ;
-    crm:P82b_end_of_the_end "30 BC"^^xsd:gYear .
+<timespan/PtolemaicPeriod> a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin time:Year ; #"305 BC"^^xsd:gYear ;
+    crm:P82b_end_of_the_end time:Year . #"30 BC"^^xsd:gYear .
 
 <event/bequeathal> a crm:E10_Transfer_of_Custody ;
     crm:P30_transferred_custody_of <agent/TheBritishMuseum> ;
     crm:P31_has_modified <item/bracelet> ;
-    crm:P32_acquired_title_through "Sir Augustus Wollaston Franks" ;
-    dct:date "1897"^^xsd:gYear .
+    crm:P32_acquired_title_through crm:E39_Actor ; #"Sir Augustus Wollaston Franks" ;
+    dct:date time:Year . #"1897"^^xsd:gYear .
 
 <agent/TheBritishMuseum> a crm:E39_Actor ;
     gn:locatedIn <place/London> ;
-    crm:P48_has_preferred_identifier "The British Museum" .
+    rdfs:label "The British Museum" .

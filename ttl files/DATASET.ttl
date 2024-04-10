@@ -13,29 +13,32 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix schema: <http://schema.org/>.
 @prefix gn: <http://www.geonames.org/ontology#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sch: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#>.
 
 
 
                 #Cleopatra VII
 <person/CleopatraVII> a foaf:Person ;
-    owl:sameAs dbr:Cleopatra ;
+    owl:sameAs <https://viaf.org/viaf/67762941/> ;
     dbp:fullName "Cleopatra VII Thea Philopator" ; 
     dbp:birthDate "69/70 BC" ;
     dbp:deathDate "30 BC" ;
     dbp:birthPlace "Alexandria" ;
     dbp:dynasty dbr:Ptolemaic_dynasty ;
+    dbp:Reign <place/Egypt> ;
     foaf:member <agent/AncientEgyptians> ;
     dbp:spouse <person/MarkAnthony> ;
     dbp:spouse dbr:Ptolemy_XIII_Theos_Philopator ;
     dbp:spouse dbr:Ptolemy_XIV ;
-    foaf:knows <person/JuliusCaesar> ;
+    dbp:unmarried_partner <person/JuliusCaesar> ;
     foaf:occupation "Queen of Egypt" ;
     dct:subject dbc:Female_pharaohs .
 
 
                 #Mark Antony
 <person/MarkAnthony> a foaf:Person ;
+    rdfs:label "Mark Antony" ;
     owl:sameAs dbr:Mark_Antony ;
     foaf:member <place/RomanRepublic> ;
     dbp:spouse <person/CleopatraVII> .
@@ -43,91 +46,88 @@
 
                 #Julius Caesar
 <person/JuliusCaesar> a foaf:Person ;
+    rdfs:label "Julius Caesar" ;
     owl:sameAs dbr:Julius_Caesar ;
     foaf:knows <person/CleopatraVII> .
 
 
                 #Ancient Egyptians
-<agent/AncientEgyptians> a crm:E39_Actor ;
-    rdf:type <agent/Civilization> ;
+<agent/AncientEgyptians> a foaf:Group ;
     rdfs:label "Ancient Egyptians" .
+
 
                 #Ptolemaic dynasty
 <agent/PtolemaicDynasty> a foaf:Group ;
     owl:sameAs dbr:Ptolemaic_dynasty ;
+    crm:P4_has_time-span <timespan/PtolemaicPeriod> ;
     dbp:country <place/Egypt> .
 
+
                 #Roman Republic
+<place/RomanRepublic> a crm:E53_Place ;
+    owl:sameAs <https://pleiades.stoa.org/places/423025/?searchterm=ancient%20rome%20*> .
+
 
                 #Egypt
 <place/Egypt> a crm:E53_Place ;
-    owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> ;
-    skos:broader <place/Eastern_Mediterranean> .
+    owl:sameAs <https://pleiades.stoa.org/places/981503> ;
+    sch:broader <place/Eastern_Mediterranean> .
 
                 
                 #Eastern Mediterranean
 <place/Eastern_Mediterranean> a <place/> ;
-    skos:narrower <place/Egypt> .
+    sch:narrower <place/Egypt> .
 
 
                 #Ptolemaic Period
-<time-span/PtolemaicPeriod>  a crm:E52_Time-Span ;
+<timespan/PtolemaicPeriod>  a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin "305 BC"^^xsd:gYear ;
     crm:P82b_end_of_the_end "30 BC"^^xsd:gYear .
+    
 
                 #PRINTED EDITION
-
-                #COIN
-
-                #STATUE
-
-                #SONG
-<item/CleopatraSong> a mo:Track ;
-    owl:sameAs <https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCleopatra_%28Samira_Efendi_song%29&sid=63960> ;
-    mo:recorded_as <https://musicbrainz.org/recording/3e7292fa-704e-445e-b93d-fc790a4d5f08> ;
-    dct:subject <person/CleopatraVII> ;
-    dct:title "Cleopatra" ;
-    mo:MusicArtist "Samira Efendi" ;
-    mo:genre dbr:Pop_music ;
-    mo:availableAs mo:Streaming ;
-    dct:language "English" ;
-    dct:publisher "BMF Records" ;
-    dct:date "2020"^^xsd:gYear .
+<item/PrintedEdition> a crm:E31_Document ;
+    crm:P102_has_title "Shakespeare's Tragedy of Antony and Cleopatra" ;
+    crm:P94_has_created <https://viaf.org/viaf/96994048/> ;
+    schema:contributor "John Dryden" ;
+    dct:type "Printed Edition" ;
+    crm:P72_has_language "English" ;
+    schema:genre "Theatral text" ;
+    dct:created "1607 ca." ;
+    dct:published "London" ;
+    dct:published "1813" ;
+    crm:P49_has_forme_or_current_keeper "Bavarian State Library" ;
+    owl:sameAs <https://search.worldcat.org/title/8915410> .
 
 
-                #BRACELET 
-<item/Bracelet> a crm:E22_Man-Made_Object ;
-    crm:P2_has_type "ArchaeologicalArtifact" ;
-    crm:P45_consists_of [
-        a crm:E57_Material ;
-        rdfs:label "Gold"
-    ] ;
-    crm:P4_has_time-span <time-span/PtolemaicPeriod> ;
-    dct:provenance <place/Egypt> ;
-    crm:P50_has_current_keeper </agent/TheBritishMuseum> ;
-    crm:P32_used_general_technique "Ciselure" ;
-    crm:P32_used_general_technique "Incision" ;
-    crm:P32_used_general_technique "Twisting" ;
-    crm:P108_has_produced </agent/AncientEgyptians> ;
-    crm:P32_acquired_title_through <event/bequeathal> .
+                #COIN? or #STATUE?
 
-</agent/TheBritishMuseum> a crm:E39_Actor ;
-    crm:P48_has_preferred_identifier "TheBritishMuseum" .
-
-<event/bequeathal> a crm:E10_Transfer_of_Custody ;
-    crm:P30_transferred_custody_of <agent/TheBritishMuseum> ;
-    crm:P31_has_modified <item/bracelet> ;
-    crm:P32_acquired_title_through "Sir Augustus Wollaston Franks" ;
-    dct:date "1897" .
-
-
-                #BOARD GAME 
-
-                #BALLET
 
                 #PAINTING
+<item/Artwork> crm:P2_has_type "Artwork" ;   #aat:300033618
+    owl:sameAs <https://www.wikidata.org/wiki/Q78638360> ;
+    crm:P102_has_title "The Meeting of Antony and Cleopatra" ;
+    crm:P138_represents <person/CleopatraVII> ;
+    crm:P138_represents <person/MarkAnthony> ;
+    crm:P62_depicts <place/Eastern_Mediterranean> ;
+    crm:P127_has_broader_term "Baroque" ;
+    schema:dateCreated "1745-1747"^^xsd:gYear ;
+    crm:P108_has_produced "Giambattista Tiepolo" ;
+    crm:P32_used_general_technique "Oil on canvas" ;
+    crm:P50_has_current_keeper </agent/TheMetropolitanMuseum> ;
+    crm:P32_acquired_title_through <event/bequeathal/beqPainting> .
+
+<event/bequeathal/beqPainting> a crm:E10_Transfer_of_Custody ;
+    crm:P30_transferred_custody_of <agent/TheMetropolitanMuseum> ;
+    crm:P31_has_modified <item/Artwork> ;
+    crm:P32_acquired_title_through "Mrs. Charles Wrightsman".
+
+</agent/TheMetropolitanMuseum> a crm:E74_Group ;
+    gn:locatedIn <place/NewYork> ;
+    crm:P48_has_preferred_identifier "The Metropolitan Museum" .
 
                 #MOVIE
 
-                #MANUSCRIPT
+
+
 
