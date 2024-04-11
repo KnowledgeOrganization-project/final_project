@@ -8,43 +8,38 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix bibframe:  <https://www.loc.gov/bibframe/> .
+@prefix bf:  <https://www.loc.gov/bibframe/> .
+@prefix gn: <http://www.geonames.org/ontology/> .
 
-<item/coin> a crm:E24_Physical_Human_Made_Thing ;
+<item/Coin> a crm:E24_Physical_Human_Made_Thing ;
     crm:P62_depicts <person/CleopatraVII> ;
     crm:P62_depicts <person/MarkAntony> ;
     crm:P180_was_currency_of <type/tetradrachm>;
     crm:P45_consists_of "Silver" ;
-    bibframe:originDate "37-33 BC"^^xsd:gYear ;
+    bf:originDate "37-33 BC"^^xsd:gYear ;
     crm:P50_has_current_keeper <agent/ArtInstituteofChicago> ;
-    crm:P108_has_produced <agent/RomanRepublic> ;
     crm:P8_took_place_on_or_within <place/EasternMediterrenean> .
 
 <person/CleopatraVII> a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/67762941> ;
     owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
     owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
-    bibframe:family <person/MarkAntony> ;
-    bibframe:family <person/JuliusCaesar> ;
+    bf:family <person/MarkAntony> ;
+    bf:family <person/JuliusCaesar> ;
     rdfs:label <http://w3id.org/unveiling-cleopatra.org/label/QueenofEgypt> .
 
 <person/MarkAntony> a foaf:Person ;
     owl:sameAs <https://viaf.org/viaf/88759462/> ;
-    foaf:member <agent/RepublicRoman> ;
-    bibframe:family <person/CleopatraVII> .
-
-<agent/RomanRepublic> a foaf:Group ;
-    owl:sameAs <place/Roman-Republic> ;
-    foaf:member <person/MarkAntony> .
+    bf:family <person/CleopatraVII> .
 
 <type/tetradrachm> a crm:E98_Currency ;
-    crm:P127_has_broader_term "Coin" ;
+    crm:P91_is_unit_of E97_Monetary_Amount ;
     owl:sameAs <https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300037254>.
 
 <agent/ArtInstituteofChicago> a crm:E39_Actor ;
     owl:sameAs <https://viaf.org/viaf/131375374/> ;
-    crm:P53_has_former_or_current_location <place/Chicago>;
-    crm:P48_has_preferred_identifier "ArtInstituteofChicago" .
+    gn:locatedIn <place/Chicago>;
+    rdfs:label "Art Institute of Chicago" .
 
 <place/Chicago> a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/4887398/chicago.html> .

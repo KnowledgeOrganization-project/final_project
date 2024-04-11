@@ -11,25 +11,19 @@
 @prefix xs:    <http://www.w3.org/2001/XMLSchema> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<item/royaldecree> a foaf:Document ;
+<item/RoyalDecree> a foaf:Document ;
     foaf:page  <http://papyri.info/ddbdp/p.bingen;;45> ; 
-    foaf:topic  <http://papyri.info/hgv/78025/source> , <http://papyri.info/ddbdp/p.bingen;;45/source> ;
+    foaf:topic  <http://papyri.info/hgv/78025/source> ;
     crm:P45_consists_of "papyrus" ;
     rdf:type "manuscript";
     foaf:primaryTopic "International Trade";
     foaf:maker <agent/AncientEgyptians> ;
     crm:P3_has_note "CleopatraSignature" ;
-    crm:P8_took_place_on_or_within <place/Egypt> ;
+    crm:P8_took_place_on <place/Egypt> ;
     bibframe:originDate "0333-02-23"^^xsd:date ;
     dcterms:language "KoineGreek" ;
     crm:P53_has_current_location <agent/EgyptianMuseumofBerlin> ;
     dcterms:subject <person/QCascellius> .
-
-<agent/RomanRepublic> a foaf:Group ;
-    owl:sameAs <https://www.britannica.com/place/Roman-Republic> ;
-    foaf:member <person/QCascellius> ;
-    foaf:member <person/MarkAntony> ;
-    foaf:member <person/JuliusCaesar>.
 
 <person/QCascellius> a foaf:Person ;
     foaf:member <https://en.wikipedia.org/wiki/Caecilia_gens>;
@@ -46,8 +40,8 @@
     owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
     bibframe:family <person/MarkAntony> ;
     bibframe:family <person/JuliusCaesar> ;
-    foaf:maker "CleopatraSignature";
-    rdfs:label <http://w3id.org/unveiling-cleopatra.org/label/QueenofEgypt> .
+    foaf:maker "Cleopatra Signature";
+    rdfs:label "Queen of Egypt" .
 
 <person/MarkAntony> a foaf:Person ;
     owl:sameAs <https://viaf.org/viaf/88759462/> ;
@@ -64,4 +58,4 @@
 
 <agent/EgyptianMuseumofBerlin> a foaf:Organization ;
     owl:sameAs <https://viaf.org/viaf/124716958/> ;
-    crm:P48_has_preferred_identifier "Ägyptisches Museum und Papyrussammlung" .
+    rdfs:label "Ägyptisches Museum und Papyrussammlung" .
