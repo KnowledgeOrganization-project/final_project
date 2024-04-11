@@ -3,8 +3,8 @@ Cleopatra song,dcterms:subject ,Cleopatra VII Thea Philopator
 Cleopatra song,rdf:type,Audio Track
 Cleopatra song,mo:genre,Pop Music
 Cleopatra song,dct:title,Cleopatra
-Cleopatra song,mo:performer,Samira Efendi
-Cleopatra song,dct:date,2020
+Cleopatra song,mo:singer,Samira Efendi
+Cleopatra song,dct:created,2020
 Cleopatra song,dct:language,English
-Cleopatra song,dct:publisher,BMF Records
-Cleopatra song,mo:availableAs,Streaming
+Cleopatra song,mo:publisher,BMF Records
+Cleopatra song,mo:media_type,Streaming

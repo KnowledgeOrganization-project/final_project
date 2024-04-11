@@ -1,4 +1,4 @@
-@base <http://w3id.org/unveiling-cleopatra.org/>.
+@base <https://w3id.org/unveiling-cleopatra.org/>.
 @prefix bibframe: <http://id.loc.gov/ontologies/bibframe/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.

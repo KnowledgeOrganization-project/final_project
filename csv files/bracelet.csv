@@ -1,9 +1,8 @@
 SUBJECT,PREDICATE,OBJECT
-Gold bracelet in the form of a serpent,rdf:type,Man-Made Object
 Gold bracelet in the form of a serpent,crm:P2_has_type,Archaeological Artifact
-Gold bracelet in the form of a serpent,crm:P108_has_produced,Ancient Egyptians
-Gold bracelet in the form of a serpent,crm:E57_Material,Gold
-Gold bracelet in the form of a serpent,crm:P4_has_time-span,305BC - 30BC
+Gold bracelet in the form of a serpent,dct:creator,Ancient Egyptians
+Gold bracelet in the form of a serpent,crm:E45_consists_of,Gold
+Gold bracelet in the form of a serpent,crm:P4_has_time-span,Ptolemaic period (305BC - 30BC)
 Gold bracelet in the form of a serpent,crm:P32_used_general_technique,Ciselure
 Gold bracelet in the form of a serpent,crm:P32_used_general_technique,Incision
 Gold bracelet in the form of a serpent,crm:P32_used_general_technique,Twisting

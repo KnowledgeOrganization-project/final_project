@@ -6,4 +6,4 @@ Performance, schema:creator, David Nixon
 Performance, schema:productionCompany, Northern Ballet’s company  
 Performance, crm:E52 Time-Span, 2011  
 Performance, schema:genre,  Ballet
-Performance, crm:P102_has_title, Cleopatra 
+Performance, schema:title, Cleopatra 
