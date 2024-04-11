@@ -169,20 +169,38 @@
     crm:P48_has_preferred_identifier "The Metropolitan Museum" .
 
                 #MOVIE
-<item/Movie> a dbo:Movie ;
-    dcterms:title "Cleopatra"^^xsd:string ;
-    schema:director "Joseph L. Mankiewie" ;
-    schema:producer "Walter Wanger" ;
-    dct:published "1963"^^xsd:gYear ;
+<item/movie> a schema:Movie ;   
+    crm:P102_has_title "Cleopatra" ;
+    schema:director <person/Joseph_L_Mankiewie> ;
+    schema:producer <person/Walter_Wanger> ;
+    schema:datePublished "1963"^^xsd:gYear ;
     schema:genre "Colossal" ;
-    schema:duration "217 min"^^xsd:string ;
-    gn:locatedIn "UnitedStates" ;
-    schema:language "English" ;
-    schema:productionCompany <http://cleopatra-project.org/organization/20th_Century_Studios> ;
-    dcterms:subject <person/CleopatraVII> ;
-    dcterms:subject <person/MarkAntony> ;
-    dcterms:subject <person/JuliusCaesar> .
+    schema:duration "217min" ;
+    crm:P7_took_place_at <place/UnitedStates> ; 
+    dct:inLanguage "English" ;
+    crm:P108_was_produced_by <agent/20th_Century_Studios> ; 
+    crm:P129is_about <person/CleopatraVII>  ;
+    crm:PC14_carried_out_by <person/ElizabethTaylor>  ;
+    dcterms:subject <person/JuliusCaesar>;
+    dcterms:subject <person/MarkAntony>.
 
+<place/UnitedStates> a crm:E53_Place ;
+    rdf:label "United States";
+    owl:sameAs <https://www.geonames.org/6252001/united-states.html> .
 
+<person/ElizabethTaylor> a crm:E39Actor;
+    rdf:label "Elizabeth Taylor";
+    owl:sameAs <https://viaf.org/24624716/>;
+    crm:P141_in_the_role_of <person/CleopatraVII> .
+
+<agent/20th_Century_Studios> a schema:Organization;
+    rdf:label "20th Century Studios";
+    owl:sameAs <https://dbpedia.org/20th_Century_Studios>.
+
+<person/Joseph_L_Mankiewie> a foaf:Person;
+    crm:94_has_created <item/movie>.
+
+<person/Walter_Wanger> a foaf:Person;
+    crm:94_has_created <item/movie>.
 
 
