@@ -9,16 +9,15 @@
 @prefix bibframe:  <https://www.loc.gov/bibframe/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<item/statue> a crm:E24_Physical_Human_Made_Thing ;
-    crm:P62_depicts <person/CleopatraVII> ;
+<item/Statue> a crm:E24_Physical_Human_Made_Thing ;
+    crm:P138_represents <person/CleopatraVII> ;
     crm:P2_has_type "Artwork" ;
     crm:P4_has_time-span <timespan/Ptolemaicperiod> ;
-    crm:P65_shows_visual_item "Cleopatra Inscription";
     crm:P45_consists_of "Dolomite Limestone" ;
     crm:P108_has_produced <agent/AncientEgyptians> ;
-    crm:P8_took_place_on_or_within <place/Egypt> ;
+    crm:P8_took_place_on <place/Egypt> ;
     crm:P50_has_current_keeper <agent/MetropolitanMuseumofArt> ;
-    crm:P23_surrendered_title_through <event/donation> .
+    crm:P23_surrendered_title_through <event/bequeatal> .
 
 <person/CleopatraVII> a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/67762941> ;
@@ -42,12 +41,12 @@
 <agent/MetropolitanMuseumofArt> a crm:E39_Actor ; 
     owl:sameAs <https://www.metmuseum.org/> ; 
     crm:P53_has_former_or_current_location <place/NewYork> ;
-    crm:P48_has_preferred_identifier "TheMET" .
+    rdfs:label "TheMET" .
 
 <place/NewYork> a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/5128581/new-york-city.html> .
 
-<event/donation> a crm:E08_Acquisitions ;
+<event/bequeatal> a crm:E08_Acquisitions ;
     crm:P29_custody_received_by <agent/MetropolitanMuseumofArt> ;
     crm:P30_transferred_custody_of  "Joseph Willian Drexel" ;
     dct:date "1889"^^xsd:gYear .
