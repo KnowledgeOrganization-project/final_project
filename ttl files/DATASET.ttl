@@ -14,6 +14,8 @@
 @prefix schema: <http://schema.org/>.
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix sch: <http://www.w3.org/2004/02/skos/core#> .
+@prefix bf:  <https://www.loc.gov/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix time: <http://www.w3.org/2006/time#>.
 
 
@@ -22,9 +24,9 @@
 <person/CleopatraVII> a foaf:Person ;
     owl:sameAs <https://viaf.org/viaf/67762941/> ;
     dbp:fullName "Cleopatra VII Thea Philopator" ; 
-    dbp:birthDate "69/70 BC" ;
-    dbp:deathDate "30 BC" ;
-    dbp:birthPlace "Alexandria" ;
+    dbp:birthDate "69/70 BC"^^xsd:gYear  ;
+    dbp:deathDate "30 BC"^^xsd:gYear  ;
+    dbp:birthPlace <place/Alexandria> ;
     dbp:dynasty dbr:Ptolemaic_dynasty ;
     dbp:Reign <place/Egypt> ;
     foaf:member <agent/AncientEgyptians> ;
@@ -39,6 +41,9 @@
                 #Mark Antony
 <person/MarkAnthony> a foaf:Person ;
     rdfs:label "Mark Antony" ;
+    dbp:birthDate "83 BC"^^xsd:gYear  ;
+    dbp:deathDate "30 BC"^^xsd:gYear  ;
+    foaf:occupation "Roman politician and general" ;
     owl:sameAs dbr:Mark_Antony ;
     foaf:member <place/RomanRepublic> ;
     dbp:spouse <person/CleopatraVII> .
@@ -47,6 +52,9 @@
                 #Julius Caesar
 <person/JuliusCaesar> a foaf:Person ;
     rdfs:label "Julius Caesar" ;
+    dbp:birthDate "100 BC"^^xsd:gYear  ;
+    dbp:deathDate "30 BC"^^xsd:gYear  ;
+    foaf:occupation "Roman general and dictator" ;
     owl:sameAs dbr:Julius_Caesar ;
     foaf:knows <person/CleopatraVII> .
 
@@ -65,18 +73,21 @@
 
                 #Roman Republic
 <place/RomanRepublic> a crm:E53_Place ;
+    crm:P4_has_time-span "509 BC - 27 BC"^^xsd:string ;
     owl:sameAs <https://pleiades.stoa.org/places/423025/?searchterm=ancient%20rome%20*> .
 
 
                 #Egypt
 <place/Egypt> a crm:E53_Place ;
     owl:sameAs <https://pleiades.stoa.org/places/981503> ;
-    sch:broader <place/Eastern_Mediterranean> .
+    sch:broader <place/Eastern_Mediterranean> ;
+    sch:narrower <place/Alexandria> .
 
                 
                 #Eastern Mediterranean
 <place/Eastern_Mediterranean> a <place/> ;
-    sch:narrower <place/Egypt> .
+    sch:narrower <place/Egypt> ;
+    owl:sameAs <https://www.getty.edu/vow/TGNFullDisplay?find=&place=&nation=&english=Y&subjectid=7593196> . 
 
 
                 #Ptolemaic Period
@@ -94,13 +105,44 @@
     crm:P72_has_language "English" ;
     schema:genre "Theatral text" ;
     dct:created "1607 ca." ;
-    dct:published "London" ;
+    dct:published <place/London> ;
     dct:published "1813" ;
-    crm:P49_has_forme_or_current_keeper "Bavarian State Library" ;
+    crm:P49_has_forme_or_current_keeper <agent/BavarianStateLibrary> ;
     owl:sameAs <https://search.worldcat.org/title/8915410> .
 
+<agent/BavarianStateLibrary> a crm:E74_Group ;
+    owl:sameAs dbr:Bavarian_State_Library ;
+    gn:locatedIn <place/Munich> ;
+    rdfs:label "Bavarian State Library" .
 
-                #COIN? or #STATUE?
+
+
+                #COIN 
+<item/Coin> a crm:E24_Physical_Human_Made_Thing ;
+    crm:P62_depicts <person/CleopatraVII> ;
+    crm:P62_depicts <person/MarkAntony> ;
+    crm:P180_was_currency_of <type/tetradrachm>;
+    crm:P45_consists_of "Silver" ;
+    bf:originDate "37-33 BC"^^xsd:gYear ;
+    crm:P50_has_current_keeper <agent/ArtInstituteofChicago> ;
+    crm:P8_took_place_on_or_within <place/EasternMediterrenean> .
+
+<person/CleopatraVII> a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/67762941> ;
+    owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
+    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
+    bf:family <person/MarkAntony> ;
+    bf:family <person/JuliusCaesar> ;
+    rdfs:label <http://w3id.org/unveiling-cleopatra.org/label/QueenofEgypt> .
+
+<type/tetradrachm> a crm:E98_Currency ;
+    crm:P91_is_unit_of crm:E97_Monetary_Amount ;
+    owl:sameAs <https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300037254>.
+
+<agent/ArtInstituteofChicago> a crm:E74_Group ;
+    owl:sameAs <https://viaf.org/viaf/131375374/> ;
+    gn:locatedIn <place/Chicago> ;
+    rdfs:label "Art Institute of Chicago" .
 
 
                 #PAINTING
@@ -127,6 +169,19 @@
     crm:P48_has_preferred_identifier "The Metropolitan Museum" .
 
                 #MOVIE
+<item/Movie> a dbo:Movie ;
+    dcterms:title "Cleopatra"^^xsd:string ;
+    schema:director "Joseph L. Mankiewie" ;
+    schema:producer "Walter Wanger" ;
+    dct:published "1963"^^xsd:gYear ;
+    schema:genre "Colossal" ;
+    schema:duration "217 min"^^xsd:string ;
+    gn:locatedIn "UnitedStates" ;
+    schema:language "English" ;
+    schema:productionCompany <http://cleopatra-project.org/organization/20th_Century_Studios> ;
+    dcterms:subject <person/CleopatraVII> ;
+    dcterms:subject <person/MarkAntony> ;
+    dcterms:subject <person/JuliusCaesar> .
 
 
 

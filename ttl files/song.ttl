@@ -13,7 +13,7 @@
 @prefix schema: <http://schema.org/>.
 
 <item/CleopatraSong> a mo:Track ;
-    owl:sameAS <https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCleopatra_%28Samira_Efendi_song%29&sid=63960> ;
+    owl:sameAs <https://dbpedia.org/describe/?url=http%3A%2F%2Fdbpedia.org%2Fresource%2FCleopatra_%28Samira_Efendi_song%29&sid=63960> ;
     mo:recorded_as <https://musicbrainz.org/recording/3e7292fa-704e-445e-b93d-fc790a4d5f08> ;
     dct:subject <person/CleopatraVII> ;
     dct:title crm:E35_Title ; #"Cleopatra" ;
