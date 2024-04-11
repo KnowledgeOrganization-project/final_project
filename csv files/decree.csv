@@ -1,11 +1,11 @@
-Subjectï¿½,Predicateï¿½,Objectï¿½
-Royal decreeï¿½,rdf:typeï¿½,Manuscriptï¿½
-Royal decreeï¿½,crm:P45_consists_of ,Papyrusï¿½
-Royal decreeï¿½,foaf:primaryTopicï¿½,International Tradeï¿½
-Royal decreeï¿½,foaf:makerï¿½,Ancient Egyptiansï¿½
-Royal decreeï¿½,crm:P3_has_noteï¿½,Cleopatraï¿½s signatureï¿½
-Royal decreeï¿½,crm:P8_took_place_onï¿½,Egyptï¿½
-Royal decreeï¿½,bibframe:originDateï¿½,Before february 23th 33BCï¿½
-Royal decreeï¿½,dcterms:languageï¿½,Koine Greekï¿½
-Royal decreeï¿½,crm:P53_has_current_locationï¿½,Egyptian Museum of Berlinï¿½
-Royal decreeï¿½,dcterms:subjectï¿½,Q. Cascelliusï¿½
+Subject ,Predicate ,Object 
+Royal decree ,rdf:type ,Manuscript 
+Royal decree ,crm:P45_consists_of ,Papyrus 
+Royal decree ,foaf:primaryTopic ,International Trade 
+Royal decree ,foaf:maker ,Ancient Egyptians 
+Royal decree ,crm:P3_has_note ,Cleopatra’s signature 
+Royal decree ,crm:P8_took_place_on ,Egypt 
+Royal decree ,bibframe:originDate ,Before february 23th 33BC 
+Royal decree ,dcterms:language ,Koine Greek 
+Royal decree ,crm:P53_has_current_location ,Egyptian Museum of Berlin 
+Royal decree ,dcterms:subject ,Q. Cascellius 
