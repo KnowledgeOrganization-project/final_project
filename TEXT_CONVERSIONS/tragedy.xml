@@ -9,9 +9,11 @@
             </titleStmt>
             <publicationStmt>
                 <distributor>
-                <name>Cleopatra Project</name>
+                <name>Unveiling Cleopatra</name>
+                <pubPlace>Bologna</pubPlace>
+                <date>2024</date>
                 <address>
-                    <url>http://cleopatra-project.org/</url>
+                    <url>http://w3id.org/unveiling-cleopatra.org/</url>
                 </address>
                 </distributor>
                 <availability status="free">
@@ -19,6 +21,16 @@
                     </licence>
                 </availability>
             </publicationStmt>
+            <notesStmt>
+                <note anchored="true">
+                In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
+                    <sourceNote><address><url>https://en.wikipedia.org/wiki/Long_s</url></address></sourceNote>
+                </note>
+                <note anchored="true">
+                John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
+                    <sourceNote> <address><url>https://www.britannica.com/biography/William-Shakespeare/Literary-criticism</url></address> </sourceNote>
+                </note>
+            </notesStmt>
             <sourceDesc>
                 <bibfull>
                     <titleStmt>
@@ -34,21 +46,11 @@
                         <date>1813</date>
                     </publicationStmt>
                     <availabity status="free"></availabity>
-                    <notesStmt>
-                        <note anchored="true">
-                        In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
-                            <sourceNote><address><url>https://en.wikipedia.org/wiki/Long_s</url></address></sourceNote>
-                        </note>
-                        <note anchored="true">
-                        John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
-                            <sourceNote> <address><url>https://www.britannica.com/biography/William-Shakespeare/Literary-criticism</url></address> </sourceNote>
-                        </note>
-                    </notesStmt>
                 </bibfull>
             </sourceDesc>
             <encodingDesc>
                 <projectDesc>
-                    <p>A transcription of Shakespeare's Tragedy of Antony and Cleopatra Scene 3 from the Act 1 acording <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>. This version was developed in the context of "Cleopatra Project" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
+                    <p>A transcription of Shakespeare's Tragedy of Antony and Cleopatra Scene 3 from the Act 1 acording <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>. This version was developed in the context of "Unveiling Cleopatra" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
                     within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna, based on the specified printed edition.</p>
                 </projectDesc>
                 <editorialDecl>
