@@ -11,7 +11,7 @@
                 <distributor>
                 <name>Cleopatra Project</name>
                 <address>
-                    <url>http://cleopatra-project.org/</url>
+                    <url>http://w3id.org/unveiling-cleopatra.org/</url>
                 </address>
                 </distributor>
                 <availability status="free">
@@ -48,7 +48,7 @@
             </sourceDesc>
             <encodingDesc>
                 <projectDesc>
-                    <p>A transcription of Shakespeare's Tragedy of Antony and Cleopatra Scene 3 from the Act 1 acording <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>. This version was developed in the context of "Cleopatra Project" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
+                    <p>A transcription of Shakespeare's Tragedy of Antony and Cleopatra Scene 3 from the Act 1 acording <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>. This version was developed in the context of "Unveiling Cleopatra" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
                     within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna, based on the specified printed edition.</p>
                 </projectDesc>
                 <editorialDecl>
