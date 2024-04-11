@@ -1,23 +1,30 @@
-@prefix ex: <http://cleopatra-project.org/> .
+@base<https://w3id.org/unveiling_cleopatra/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix schema: <http://schema.org/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>. 
+@prefix dcterms: <https://purl.org/dc/terms/>.
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://example.com/> .  
 
-ex:Performance a crm:E5_Event ;
-    schema:title "Cleopatra" ;
-    schema:genre ex:Ballet ;
-    schema:duration "125min"^^xsd:string;
-    schema:creator <http://cleopatra-project.org/person/David_Nixon>;
-    schema:productionCompany ex:NorthernBalletsCompanys ;
-    crm:P2_has_type "Dance" ;
-    crm:E52_Time_Span "2011" .
+<event/performance> a crm:E5_Event ;
+    crm:P2_has_type dbr:Dance; 
+    crm:P102_has_title crm:E35_Title; #"Cleopatra" 
+    schema:genre dbr:Ballet; #"Ballet" 
+    schema:duration schema:Duration ; #"125min";
+    schema:director <person/David_Nixon>;
+    crm:P108_was_produced_by <agent/NorthernBalletsCompanysn> ; 
+    dcterms:subject <person/CleopatraVII> ;
+    crm:PC14_carried_out_by <person/MarthaLeebolt> ;
+    crm:P4_has_time_span crm:E52_Time_Span. #"2011" 
 
-ex:NorthernBalletsCompanys a schema:productionCompany ;
+<agent/NorthernBalletsCompanysn> a schema:Organization ;
     owl:sameAs <http://northernballet.com> ;
-    crm:P53_has_former_or_current_location ex:UnitedStates ;
+    crm:P7_took_place_at crm:E53_Place ; #"UnitedStates" 
     crm:P48_has_preferred_identifier "Northern Ballet’s company" .
 
-ex:Ballet a schema:Genre ;
-    owl:sameAs <http://dbpedia.org/page/Ballet> .
+<person/MarthaLeebolt> a crm:E39Actor;
+    rdf:label "Martha Leebolt";
+    crm:P141_in_the_role_of <person/CleopatraVII> .
+

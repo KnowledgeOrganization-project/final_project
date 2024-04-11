@@ -1,55 +1,39 @@
-@prefix ex: <http://cleopatra-project.org/>.
+@base<https://w3id.org/unveiling_cleopatra/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dbr: <http://dbpedia.org/resource/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix schema: <http://schema.org/>.
 @prefix dct: <http://purl.org/dc/terms/>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix time: <http://www.w3.org/2006/time#>.
 
-ex:CardGame a crm:E22_Human-Made_Object;
-    dct:title "Caesar & Cleopatra" ;
-    crm:P2_has_type "Board Game" ;
-    crm:E53_Place ex:Germany;
-    schema:genre schema:Strategy ;
-    schema:duration "60min"^^xsd:string;
-    dcterms:creator "Wolfgang Ludtke" ;
-    dct:date "2020"^^xsd:gYear ;
-    dcterms:language "Italian" ;
-    crm:E57_Material "paper" ;
-    dct:subject ex:CleopatraVII ;
-    dct:subject ex:JuliusCaesar ;
-    dct:publisher ex:RioGrandeGames ;
-    dct:publisher ex:LaserPlus ;
-    dct:publisher ex:KosmosGames ;
-    dct:publisher ex:999Games ;
-    dct:publisher "FilosofiaÉditions" ;
-    dct:publisher ex:KaissaChessGames .
+<item/boardgame> a crm:E22_Human_Made_Object; #BoardGame
+    crm:P102_has_title crm:E35_Title ; #"Caesar & Cleopatra" 
+    crm:P2_has_type dbr:BoardGame ; 
+    dct:provenance <place/Germany>;
+    schema:genre dbr:Strategy ;
+    schema:duration schema:Duration; #"60min";
+    dcterms:creator <person/WolfgangLudtke> ;
+    schema:datePublished time:Year; # "2020"
+    schema:inLanguage schema:Language ;#"Italian" 
+    crm:E45_consists_of crm:E55_Type; #"paper"
+    dct:subject <person/CleopatraVII> ;
+    dct:subject <person/JuliusCaesar> ;
+    dcterms:publisher <agent/RioGrandeGames> ;
+    dcterms:publisher <agent/LaserPlus> ;
+    dcterms:publisher <agent/KosmosGames> ;
+    dcterms:publisher <agent/999Games> ;
+    dcterms:publisher <agent/FilosofiaÉditions> ;
+    dcterms:publisher <agent/Tilsit> ;
+    dcterms:publisher <agent/KaissaChessGames> .
 
-ex:Germany a crm:E53_Place ;
+<place/Germany> a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/2921044/germany.html> .
 
-ex:RioGrandeGames a foaf:Organization ;
-    owl:sameAs <http://www.riograndegames.com/> .
-ex:LaserPlus a foaf:Organization ; 
-    owl:sameAs <http://www.laserplus.si> .
-ex:KosmosGames a foaf:Organization ; 
-    owl:sameAs <http://kosmos.games> .
-ex:999Games a foaf:Organization ; 
-    owl:sameAs <http://www.999games.nl> .
-ex:KaissaChessGames a foaf:Organization ; 
-    owl:sameAs <http://www.kaissagames.com/en/> .
-
-#Subjects
-ex:CleopatraVII a foaf:Person ;
-    rdfs:label "Cleopatra VII" ;
-    owl:sameAs <http://viaf.org/viaf/67762941> ;
-    owl:sameAs <http://dbpedia.org/page/Cleopatra> ;
-    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> .
-
-ex:JuliusCaesar a foaf:Person ;
-    owl:sameAs <https://viaf.org/viaf/286265178/> ;
-    foaf:member ex:RepublicRomans .
+<agent/RioGrandeGames> a schema:Organization;
+    rdf:label "Rio Grande Games> ";
+    owl:sameAs <https://www.wikidata.org/wiki/Q1504344>.

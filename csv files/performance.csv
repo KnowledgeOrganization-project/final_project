@@ -1,9 +1,12 @@
 SUBJECT,PREDICATE,OBJECT
 Performance, rdf:type, Event 
+Performance, crm:P102_has_title, Cleopatra 
 Performance, crm:P2_has_type, Dance  
 Performance, schema:duration, 125min
-Performance, schema:creator, David Nixon 
-Performance, schema:productionCompany, Northern Ballet’s company  
-Performance, crm:E52 Time-Span, 2011  
+Performance, schema:director, David Nixon 
+Performance, crm:P108_was_produced_by, Northern Ballet’s company  
+Performance, crm:P4_has_time_span, 2011  
 Performance, schema:genre,  Ballet
-Performance, schema:title, Cleopatra 
+Performance, dcterms:subject, Cleopatra VII
+Performance,crm:PC14_carried_out_by, Martha Leebolt
+
