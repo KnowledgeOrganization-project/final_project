@@ -9,7 +9,9 @@
             </titleStmt>
             <publicationStmt>
                 <distributor>
-                <name>Cleopatra Project</name>
+                <name>Unveiling Cleopatra</name>
+                <pubPlace>Bologna</pubPlace>
+                <date>2024</date>
                 <address>
                     <url>http://w3id.org/unveiling-cleopatra.org/</url>
                 </address>
@@ -19,6 +21,16 @@
                     </licence>
                 </availability>
             </publicationStmt>
+            <notesStmt>
+                <note anchored="true">
+                In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
+                    <sourceNote><address><url>https://en.wikipedia.org/wiki/Long_s</url></address></sourceNote>
+                </note>
+                <note anchored="true">
+                John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
+                    <sourceNote> <address><url>https://www.britannica.com/biography/William-Shakespeare/Literary-criticism</url></address> </sourceNote>
+                </note>
+            </notesStmt>
             <sourceDesc>
                 <bibfull>
                     <titleStmt>
@@ -34,16 +46,6 @@
                         <date>1813</date>
                     </publicationStmt>
                     <availabity status="free"></availabity>
-                    <notesStmt>
-                        <note anchored="true">
-                        In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
-                            <sourceNote><address><url>https://en.wikipedia.org/wiki/Long_s</url></address></sourceNote>
-                        </note>
-                        <note anchored="true">
-                        John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
-                            <sourceNote> <address><url>https://www.britannica.com/biography/William-Shakespeare/Literary-criticism</url></address> </sourceNote>
-                        </note>
-                    </notesStmt>
                 </bibfull>
             </sourceDesc>
             <encodingDesc>
