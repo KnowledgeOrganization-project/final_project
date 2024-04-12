@@ -24,18 +24,16 @@
     crm:P23_transferred_title_from <event/bequeathal> .
 
 <place/Egypt> a crm:E53_Place ;
-    owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
+    owl:sameAs <https://pleiades.stoa.org/places/981503> ;
+    sch:broader <place/Eastern_Mediterranean> ;
+    sch:narrower <place/Alexandria> .
 
 </agent/TheBritishMuseum> a crm:E74_Group ;
     crm:P48_has_preferred_identifier "The British Museum" .
 
-#</categories/gold> a crm:E57_Material ;
-    #rdf:label "Gold" .
-
 <agent/AncientEgyptians> a foaf:Group ; #"Civilization" 
-    rdfs:label "Ancient Egyptians" .
-
-#for later (connection Cleopatra-bracelet): ex:CleopatraVII ex:belongTo ex:ancientEgyptians .
+    rdfs:label "Ancient Egyptians" ;
+    schema:location <place/Egypt> .
 
 <timespan/PtolemaicPeriod> a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin time:Year ; #"305 BC"^^xsd:gYear ;
@@ -48,6 +46,6 @@
     crm:P22_acquired_title_through crm:E39_Actor ; #"Sir Augustus Wollaston Franks" ;
     dct:date time:Year . #"1897"^^xsd:gYear .
 
-<agent/TheBritishMuseum> a crm:E39_Actor ;
+<agent/TheBritishMuseum> a crm:E74_Group ;
     gn:locatedIn <place/London> ;
     rdfs:label "The British Museum" .

@@ -1,6 +1,8 @@
 Subject,Predicate,Object
+The Meeting of Antony and Cleopatra,rdf:type,efrbroo:F4_Manifestation_Singleton
 The Meeting of Antony and Cleopatra,crm:P102_has_title,The Meeting of Antony and Cleopatra
 The Meeting of Antony and Cleopatra,crm:P138_represents,Cleopatra VII
+The Meeting of Antony and Cleopatra,crm:P138_represents,Mark Antony
 The Meeting of Antony and Cleopatra,crm:P138_represents,Mark Anthony
 The Meeting of Antony and Cleopatra,crm:P62_depicts,Eastern Mediterranean
 The Meeting of Antony and Cleopatra,crm:P2_has_type,Artwork

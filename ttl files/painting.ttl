@@ -23,12 +23,12 @@
     crm:P108_has_produced <https://www.getty.edu/art/collection/person/103K3W> ; #"GiambattistaTiepolo"
     crm:P32_used_general_technique crm:E55_Type ; #"Oil on canvas" ; #cdwa:medium "Oil on canvas"
     crm:P50_has_current_keeper </agent/TheMetropolitanMuseum> ;
-    crm:P32_acquired_title_through <event/bequeathal> .
+    crm:P22_acquired_title_through <event/bequeathal> .
 
 <event/bequeathal> a crm:E10_Transfer_of_Custody ;
     crm:P30_transferred_custody_of <agent/TheMetropolitanMuseum> ;
     crm:P31_has_modified <item/Artwork> ;
-    crm:P32_acquired_title_through crm:E39_Actor. #"Mrs. Charles Wrightsman".
+    crm:P23_transferred_title_from crm:E39_Actor. #"Mrs. Charles Wrightsman".
 
 </agent/TheMetropolitanMuseum> a crm:E74_Group ;
     gn:locatedIn <place/NewYork> ;

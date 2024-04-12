@@ -5,6 +5,9 @@
 @prefix schema: <http://schema.org/>.
 @prefix wrdc: <https://id.oclc.org/worldcat/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <item/PrintedEdition> a crm:E31_Document ;
     crm:P102_has_title "Shakespeare's Tragedy of Antony and Cleopatra" ;
@@ -16,11 +19,11 @@
     schema:contributor "John Dryden" ;
     dct:type "Printed Edition" ; #dct:MediaType
     crm:P72_has_language "English" ;
-    schema:genre "Theatral text" ;
+    schema:genre dbr:Drama ;
     dct:created "1607 ca." ;
     dct:published "London" ;
     dct:published "1813" ;
-    crm:P49_has_forme_or_current_keeper "Bavarian State Library" ;
+    crm:P49_has_forme_or_current_keeper <agent/BavarianStateLibrary> ;
     owl:sameAs <https://search.worldcat.org/title/8915410> .
 
 <person/CleopatraVII> a foaf:Person ;
@@ -34,3 +37,9 @@
 
 <agent/RomanRepublic> a foaf:Organization ;
     owl:sameAs <https://dbpedia.org/data/Roman_Republic> .
+
+<agent/BavarianStateLibrary> a crm:E74_Group ;
+    owl:sameAs <https://search.worldcat.org/title/8915410> ;
+    gn:locatedIn <place/Munich> ;
+    rdfs:label "Bavarian State Library" .
+

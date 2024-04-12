@@ -34,8 +34,7 @@
     dbp:spouse dbr:Ptolemy_XIII_Theos_Philopator ;
     dbp:spouse dbr:Ptolemy_XIV ;
     dbp:unmarried_partner <person/JuliusCaesar> ;
-    foaf:occupation "Queen of Egypt" ;
-    dct:subject dbc:Female_pharaohs .
+    foaf:occupation "Queen of Egypt" .
 
 
                 #Mark Antony
@@ -56,19 +55,21 @@
     dbp:deathDate "30 BC"^^xsd:gYear  ;
     foaf:occupation "Roman general and dictator" ;
     owl:sameAs dbr:Julius_Caesar ;
-    foaf:knows <person/CleopatraVII> .
+    dbp:unmarried_partner <person/CleopatraVII> .
 
 
                 #Ancient Egyptians
 <agent/AncientEgyptians> a foaf:Group ;
-    rdfs:label "Ancient Egyptians" .
+    rdfs:label "Ancient Egyptians" ;
+    schema:location <place/Egypt> .
 
 
                 #Ptolemaic dynasty
 <agent/PtolemaicDynasty> a foaf:Group ;
     owl:sameAs dbr:Ptolemaic_dynasty ;
+    foaf:member <agent/RomanRepublic> ;
     crm:P4_has_time-span <timespan/PtolemaicPeriod> ;
-    dbp:country <place/Egypt> .
+    dbp:Reign <place/Egypt> .
 
 
                 #Roman Republic
@@ -99,14 +100,18 @@
                 #PRINTED EDITION
 <item/PrintedEdition> a crm:E31_Document ;
     crm:P102_has_title "Shakespeare's Tragedy of Antony and Cleopatra" ;
-    crm:P94_has_created <https://viaf.org/viaf/96994048/> ;
+    crm:P138_represents <person/CleopatraVII> ;
+    crm:P138_represents <person/MarkAntony> ;
+    crm:P129_is_about <place/Egypt> ;
+    crm:P129_is_about <agent/RomanRepublic> ;
+    crm:P94_has_created "William Shakespeare" ;
     schema:contributor "John Dryden" ;
-    dct:type "Printed Edition" ;
+    dct:type "Printed Edition" ; #dct:MediaType
     crm:P72_has_language "English" ;
-    schema:genre "Theatral text" ;
+    schema:genre dbr:Drama ;
     dct:created "1607 ca." ;
-    dct:published <place/London> ;
-    dct:published "1813" ;
+    dct:published "London" ;
+    dct:published "1813"^^xsd:gYear ;
     crm:P49_has_forme_or_current_keeper <agent/BavarianStateLibrary> ;
     owl:sameAs <https://search.worldcat.org/title/8915410> .
 
@@ -114,7 +119,6 @@
     owl:sameAs dbr:Bavarian_State_Library ;
     gn:locatedIn <place/Munich> ;
     rdfs:label "Bavarian State Library" .
-
 
 
                 #COIN 
@@ -126,14 +130,6 @@
     bf:originDate "37-33 BC"^^xsd:gYear ;
     crm:P50_has_current_keeper <agent/ArtInstituteofChicago> ;
     crm:P8_took_place_on_or_within <place/EasternMediterrenean> .
-
-<person/CleopatraVII> a foaf:Person ;
-    owl:sameAs <http://viaf.org/viaf/67762941> ;
-    owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
-    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
-    bf:family <person/MarkAntony> ;
-    bf:family <person/JuliusCaesar> ;
-    rdfs:label <http://w3id.org/unveiling-cleopatra.org/label/QueenofEgypt> .
 
 <type/tetradrachm> a crm:E98_Currency ;
     crm:P91_is_unit_of crm:E97_Monetary_Amount ;
@@ -163,7 +159,7 @@
     sch:broader crm:E8_Acquisition ;
     crm:P30_transferred_custody_of <agent/TheMetropolitanMuseum> ;
     crm:P31_has_modified <item/Artwork> ;
-    crm:P22_acquired_title_through "Mrs. Charles Wrightsman".
+    crm:P23_acquired_title_from "Mrs. Charles Wrightsman".
 
 </agent/TheMetropolitanMuseum> a crm:E74_Group ;
     gn:locatedIn <place/NewYork> ;

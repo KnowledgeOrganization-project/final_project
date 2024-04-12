@@ -1,5 +1,5 @@
 SUBJECT,PREDICATE,OBJECT
-Cleopatra song,dcterms:subject ,Cleopatra VII Thea Philopator
+Cleopatra song,dcterms:subject,Cleopatra VII Thea Philopator
 Cleopatra song,rdf:type,Audio Track
 Cleopatra song,mo:genre,Pop Music
 Cleopatra song,dct:title,Cleopatra
