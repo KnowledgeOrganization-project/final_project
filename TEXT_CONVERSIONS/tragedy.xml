@@ -9,11 +9,9 @@
             </titleStmt>
             <publicationStmt>
                 <distributor>
-                <name>Unveiling Cleopatra</name>
-                <pubPlace>Bologna</pubPlace>
-                <date>2024</date>
+                <name>Cleopatra Project</name>
                 <address>
-                    <url>http://w3id.org/unveiling-cleopatra.org/</url>
+                    <url>http://cleopatra-project.org/</url>
                 </address>
                 </distributor>
                 <availability status="free">
@@ -21,16 +19,6 @@
                     </licence>
                 </availability>
             </publicationStmt>
-            <notesStmt>
-                <note anchored="true">
-                In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
-                    <sourceNote><address><url>https://en.wikipedia.org/wiki/Long_s</url></address></sourceNote>
-                </note>
-                <note anchored="true">
-                John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
-                    <sourceNote> <address><url>https://www.britannica.com/biography/William-Shakespeare/Literary-criticism</url></address> </sourceNote>
-                </note>
-            </notesStmt>
             <sourceDesc>
                 <bibfull>
                     <titleStmt>
@@ -46,11 +34,21 @@
                         <date>1813</date>
                     </publicationStmt>
                     <availabity status="free"></availabity>
+                    <notesStmt>
+                        <note anchored="true">
+                        In the printed exemplar the typographer opted to use the letter "f" to represent the long "s", still in use in the time of the publication. 
+                            <sourceNote><address><url>https://en.wikipedia.org/wiki/Long_s</url></address></sourceNote>
+                        </note>
+                        <note anchored="true">
+                        John Dryden dramacist and literary critic from the Seventeenth century was the editor of this printed edition. His criticism of Shakespeare's work was famous, and included the perception that Shakespeare lacked decorum, in Dryden views, largely because he had written for an ignorant age and poorly educated audiences. Shakespeare excelled in “fancy” or imagination, but he lagged behind in “judgment".
+                            <sourceNote> <address><url>https://www.britannica.com/biography/William-Shakespeare/Literary-criticism</url></address> </sourceNote>
+                        </note>
+                    </notesStmt>
                 </bibfull>
             </sourceDesc>
             <encodingDesc>
                 <projectDesc>
-                    <p>A transcription of Shakespeare's Tragedy of Antony and Cleopatra Scene 3 from the Act 1 acording <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>. This version was developed in the context of "Unveiling Cleopatra" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
+                    <p>A transcription of Shakespeare's Tragedy of Antony and Cleopatra Scene 3 from the Act 1 acording <relatedItem type="older" target="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=14,15"/>. This version was developed in the context of "Cleopatra Project" for the "Information Science and Cultural Heritage" course (a.a. 2023/2024)
                     within the Digital Humanities and Digital Knowledge Master's Degree at Alma Mater Studiorum - University of Bologna, based on the specified printed edition.</p>
                 </projectDesc>
                 <editorialDecl>
@@ -67,29 +65,25 @@
             <lb n="1"/>
             <head>C​HARACTERS</head>
                 <list>
-                    <item>CLEOPATRA the Queen of Egypt and Antony's lover</item>
-                    <item>CHARMIAN, Cleopatra’s faithful attendant</item>
-                    <item>IRAS, Cleopatra’s faithful attendant</item>
-                    <item>ALEXAS, Cleopatra’s trusted advisor</item>
-                    <item>ANTONY, Roman General and ruller that is in love with Cleopatra</item>
+                    <item>CLEOPATRA</item>
+                    <item>CHARMIAN</item> 
+                    <item>IRAS</item>
+                    <item>ALEXAS</item>
+                    <item>ANTONY</item>
                 </list>
             <div>
                 <head rend="italic">Act I Scene 3</head>
                 <lb n="2"/>
                 <sp>
-                    <scene><hi rend="italic">A Room </hi> in CLEOPATRA'S Palace </scene>
-                    <stage rend="italic">CLEOPATRA, CHARMIAN, IRAS, <hi rend="italic">and</hi> ALEXAS <hi rend="italic"> discover'd</hi>.</stage>
-                    <lb n="3"/>
-                </sp>
-                <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
+                    <ab>A Room in Alexandria Palace</ab>
                     <ab>
                     Where is he?
                     <lb n="4"/>
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Char.</speaker>
+                    <speaker rend="italic">Charmian</speaker>
                     <ab>
                         I did not <choice>
                                         <abbr>ſ</abbr>
@@ -102,7 +96,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         <hi><i>To</i> Alexas</hi>
                         <lb n="6"/>
@@ -121,7 +115,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         <hi><i>To</i> Alexas</hi>
                         <lb n="6"/>
@@ -152,7 +146,7 @@
                     <stage><hi rend="italic">Exit Alexas.</hi></stage>
                     <lb n="12"/>
                 <sp>
-                    <speaker rend="italic">Char.</speaker>
+                    <speaker rend="italic">Charmian</speaker>
                     <ab>
                         Madam, methinks, if you did love him dearly,
                         <lb n="13"/>
@@ -163,7 +157,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         What <choice>
                             <abbr>ſ</abbr>
@@ -180,7 +174,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Thou teache<choice>
                             <abbr>ſ</abbr>
@@ -190,7 +184,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Char.</speaker>
+                    <speaker rend="italic">Charmian</speaker>
                     <ab>
                         Tempt him not so too far. 
                         <lb n="19"/>
@@ -200,7 +194,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         I am si<choice>
                             <abbr>ſ</abbr>
@@ -215,7 +209,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">An.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         I am <choice>
                             <abbr>ſ</abbr>
@@ -228,7 +222,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Help me away dear Charmian, I <choice>
                             <abbr>ſ</abbr>
@@ -251,7 +245,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         Now my deare<choice>
                             <abbr>ſ</abbr>
@@ -261,7 +255,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Pray you, <choice>
                             <abbr>ſ</abbr>
@@ -271,14 +265,14 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         What's the matter?
                         <lb n="29" rend="rj"/>
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         I know, by that <choice>
                             <abbr>ſ</abbr>
@@ -305,7 +299,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         The Gods be<choice>
                             <abbr>ſ</abbr>
@@ -315,7 +309,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         O, never was there queen
                         <lb n="36"/>
@@ -335,14 +329,14 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         Cleopatra, 
                         <lb n="39"/>
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Why <choice>
                             <abbr>ſ</abbr>
@@ -381,7 +375,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         Mo<choice>
                             <abbr>ſ</abbr>
@@ -394,7 +388,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Nay pray you, <choice>
                             <abbr>ſ</abbr>
@@ -425,7 +419,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         Hear me queen;
                         <lb n="51"/>
@@ -462,14 +456,14 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Her death! - Can Fulvia dye?
                         <lb n="58"/>
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         She's dead my queen.
                         <lb n="59"/>
@@ -513,7 +507,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         Quarrell no more, but be prepar'd to know
                         <lb n="64"/>
@@ -548,7 +542,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Cut my lace, Charmian; come;
                         <lb n="70"/>
@@ -559,7 +553,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         My precious queen forbear,
                         <lb n="73"/>
@@ -573,7 +567,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         So was Fulvia told:
                         <lb n="76"/>
@@ -605,21 +599,21 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         You'll heat my blood; no more.
                         <lb n="82"/>
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         You can do better yet; but this is meetly.
                         <lb n="83"/>
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         Now, by my <choice>
                             <abbr>ſ</abbr>
@@ -629,7 +623,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         And target, -- <choice>
                             <abbr>ſ</abbr>
@@ -651,14 +645,14 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         I'll leave you, lady.
                         <lb n="89"/>
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Courteous Lord, one word.
                         <lb n="90"/>
@@ -678,7 +672,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         But that your maje<choice>
                             <abbr>ſ</abbr>
@@ -707,7 +701,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Cleo.</speaker>
+                    <speaker rend="italic">Cleopatra</speaker>
                     <ab>
                         Your Honor calles you hence,
                         <lb n="99"/>
@@ -740,7 +734,7 @@
                     </ab>
                 </sp>
                 <sp>
-                    <speaker rend="italic">Ant.</speaker>
+                    <speaker rend="italic">Antony</speaker>
                     <ab>
                         Let us go.
                         <lb n="104"/>
