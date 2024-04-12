@@ -1,0 +1,40 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://w3id.org/unveiling-cleopatra.org/author/> a foaf:Person ;
+    dc:creator <http://w3id.org/unveiling-cleopatra.org/title/> .
+
+<http://w3id.org/unveiling-cleopatra.org/editor/> a foaf:Person ;
+    dc:editor <http://w3id.org/unveiling-cleopatra.org/title/> .
+
+<http://w3id.org/unveiling-cleopatra.org/title/> a dc:PrintedEdition ;
+    schema:name "THE TRAGEDIE OF Anthonie, and Cleopatra. Act 1, Scene 3." .
+
+<http://w3id.org/unveiling-cleopatra.org/character/1> a schema:Person ;
+    rdfs:label "CLEOPATRA" ;
+    dc:Reference <http://w3id.org/unveiling-cleopatra.org/speaker/Cleopatra> .
+
+<http://w3id.org/unveiling-cleopatra.org/character/2> a schema:Person ;
+    rdfs:label "CHARMIAN" ;
+    dc:Reference <http://w3id.org/unveiling-cleopatra.org/speaker/Charmian> .
+
+<http://w3id.org/unveiling-cleopatra.org/character/3> a schema:Person ;
+    rdfs:label "IRAS" .
+
+<http://w3id.org/unveiling-cleopatra.org/character/4> a schema:Person ;
+    rdfs:label "ALEXAS" .
+
+<http://w3id.org/unveiling-cleopatra.org/character/5> a schema:Person ;
+    rdfs:label "ANTONY" ;
+    dc:Reference <http://w3id.org/unveiling-cleopatra.org/speaker/Antony> .
+
+<http://w3id.org/unveiling-cleopatra.org/speaker/Antony> a dc:Speaker ;
+    rdfs:label "Antony" .
+
+<http://w3id.org/unveiling-cleopatra.org/speaker/Charmian> a dc:Speaker ;
+    rdfs:label "Charmian" .
+
+<http://w3id.org/unveiling-cleopatra.org/speaker/Cleopatra> a dc:Speaker ;
+    rdfs:label "Cleopatra" .
