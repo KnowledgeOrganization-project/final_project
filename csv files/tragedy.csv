@@ -1,11 +1,15 @@
-SUBJECT,PREDICATE,OBJECT
-Antony and Cleopatra,rdf:type,Printed Edition
-Antony and Cleopatra,crm:P102_has_title,Shakespeare's Tragedy of Antony and Cleopatra
-Antony and Cleopatra,crm:P94_has_created,William Shakespeare
-Antony and Cleopatra,schema:contributor,John Dryden
-Antony and Cleopatra,crm:P72_has_language,English
-Antony and Cleopatra,schema:genre,Theatral text
-Antony and Cleopatra,dct:created,1607 ca.
-Antony and Cleopatra,dct:published,London
-Antony and Cleopatra,dct:published,1813
-Antony and Cleopatra,crm:P49_has_forme_or_current_keeper,Bavarian State Library of Munich
+SUBJECT;PREDICATE;OBJECT
+Antony and Cleopatra;rdf:type;Printed Edition
+Antony and Cleopatra;crm:P102_has_title;Shakespeare's Tragedy of Antony and Cleopatra
+Antony and Cleopatra;crm:P138_represents;Mark Antony
+Antony and Cleopatra;crm:P138_represents;Cleopatra VII
+Antony and Cleopatra;crm:P94_has_created;William Shakespeare
+Antony and Cleopatra;schema:contributor;John Dryden
+Antony and Cleopatra;crm:P72_has_language;English
+Antony and Cleopatra;schema:genre;Theatral text
+Antony and Cleopatra;dct:created;1607 ca.
+Antony and Cleopatra;dct:published;London
+Antony and Cleopatra;dct:published;1813
+Antony and Cleopatra;crm:P8_took_place_on;Egypt
+Antony and Cleopatra;crm:P8_took_place_on;Roman Republic
+Antony and Cleopatra;crm:P49_has_forme_or_current_keeper;Bavarian State Library of Munich

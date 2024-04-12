@@ -1,8 +1,8 @@
-Subject ,Predicate ,Object 
-Coin with the effigy of Cleopatra ,crm:P62_depicts ,Cleopatra 
-Coin with the effigy of Cleopatra ,crm:P62_depicts ,Mark Anthony 
-Coin with the effigy of Cleopatra ,crm:P180_was_currency_of ,Tetradrachm 
-Coin with the effigy of Cleopatra ,P45_consists_of ,Silver 
-Coin with the effigy of Cleopatra ,bibframe:originDate ,37-33 BC 
-Coin with the effigy of Cleopatra ,crm:P108_has_produced ,Roman Republic 
-Coin with the effigy of Cleopatra ,crm:P8_took_place_on_or_within ,Eastern Mediterrenean 
+SubjectÂ ;PredicateÂ ;ObjectÂ 
+Coin with the effigy of CleopatraÂ ;crm:P62_depicts;CleopatraÂ 
+Coin with the effigy of CleopatraÂ ;crm:P62_depicts;Mark AnthonyÂ 
+Coin with the effigy of CleopatraÂ ;crm:P180_was_currency_of;TetradrachmÂ 
+Coin with the effigy of CleopatraÂ ;P45_consists_of;SilverÂ 
+Coin with the effigy of CleopatraÂ ;bibframe:originDateÂ ;37-33 BC
+Coin with the effigy of CleopatraÂ ;foaf:maker;Roman RepublicÂ 
+Coin with the effigy of CleopatraÂ ;crm:P8_took_place_on_or_within;Eastern MediterreneanÂ 
