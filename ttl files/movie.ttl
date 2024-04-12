@@ -9,6 +9,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dcterms: <https://purl.org/dc/terms/>.
 @prefix time: <http://www.w3.org/2006/time#>.
+@prefix bibframe: <http://id.loc.gov/ontologies/bibframe/> .
 
 <item/movie> a schema:Movie ;   
     crm:P102_has_title crm:E35_Tile ; #"Cleopatra"
@@ -44,3 +45,20 @@
 <person/Walter_Wanger> a foaf:Person;
     crm:94_has_created <item/movie>.
 
+<person/MarkAntony> a foaf:Person ;
+    owl:sameAs <https://viaf.org/viaf/88759462/> ;
+    foaf:member <agent/RomanRepublic> ; 
+    bibframe:family <person/CleopatraVII> .
+
+<person/CleopatraVII> a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/67762941> ;
+    owl:sameAs <https://dbpedia.org/page/Cleopatra> ;
+    owl:sameAs <http://www.bbc.co.uk/things/0a5fcd0f-77c2-4e8e-a43d-796b754ab9af#id> ;
+    bibframe:family <person/MarkAntony> ;
+    bibframe:family <person/JuliusCaesar> ;
+    rdfs:label <http://w3id.org/unveiling-cleopatra.org/label/QueenofEgypt> .
+
+<person/JuliusCaesar> a foaf:Person;
+    owl:sameAs <https://viaf.org/viaf/286265178/>;
+    foaf:member <agent/RomanRepublic> ;
+    bibframe:family <person/CleopatraVII> .

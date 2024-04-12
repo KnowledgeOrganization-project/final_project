@@ -27,7 +27,6 @@
     bibframe:family <person/JuliusCaesar> ;
     rdfs:label <http://w3id.org/unveiling-cleopatra.org/label/QueenofEgypt> .
 
-
 <place/Egypt> a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
     

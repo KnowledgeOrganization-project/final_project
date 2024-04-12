@@ -26,8 +26,9 @@
     dcterms:subject <person/QCascellius> .
 
 <person/QCascellius> a foaf:Person ;
-    foaf:member <https://en.wikipedia.org/wiki/Caecilia_gens>;
+    foaf:family <https://en.wikipedia.org/wiki/Caecilia_gens>;
     owl:sameAs <https://papyrus-stories.com/2020/07/20/on-a-document-signed-by-cleopatra/> ;
+    foaf:member <agent/RomanRepublic> ;
     foaf:know <person/MarkAntony> .
 
 <agent/AncientEgyptians> a foaf:Group ;

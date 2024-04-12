@@ -16,6 +16,7 @@
     crm:P62_depicts <person/MarkAntony> ;
     crm:P180_was_currency_of <type/tetradrachm>;
     crm:P45_consists_of "Silver" ;
+    foaf:maker <agent/RomanRepublic> ;
     bf:originDate "37-33 BC"^^xsd:gYear ;
     crm:P50_has_current_keeper <agent/ArtInstituteofChicago> ;
     crm:P8_took_place_on_or_within <place/EasternMediterrenean> .
@@ -30,6 +31,7 @@
 
 <person/MarkAntony> a foaf:Person ;
     owl:sameAs <https://viaf.org/viaf/88759462/> ;
+    foaf:member <agent/RomanRepublic> ; 
     bf:family <person/CleopatraVII> .
 
 <type/tetradrachm> a crm:E98_Currency ;
@@ -47,3 +49,5 @@
 <place/EasternMediterrenean> a crm:E53_Place ;
     owl:sameAs <https://www.getty.edu/vow/TGNFullDisplay?find=&place=&nation=&english=Y&subjectid=7593196> .
 
+<agent/RomanRepublic> a foaf:Organization ;
+    owl:sameAs <https://dbpedia.org/data/Roman_Republic>
