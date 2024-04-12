@@ -72,4 +72,4 @@ for passage in passages:
             g.add((rdflib.URIRef(character_uri), rdflib.URIRef(dc + "/Reference"), URIRef(speaker_uri)))
 
 # Serializzazione del grafo RDF in formato Turtle
-g.serialize(destination='tragedy_1.rdf', format='turtle')
+g.serialize(destination='tragedy_1.ttl', format='turtle')
