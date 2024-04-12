@@ -157,12 +157,13 @@
     crm:P108_has_produced "Giambattista Tiepolo" ;
     crm:P32_used_general_technique "Oil on canvas" ;
     crm:P50_has_current_keeper </agent/TheMetropolitanMuseum> ;
-    crm:P32_acquired_title_through <event/bequeathal/beqPainting> .
+    crm:P22_acquired_title_through <event/bequeathal/> .
 
-<event/bequeathal/beqPainting> a crm:E10_Transfer_of_Custody ;
+<event/bequeathal/> a crm:E10_Transfer_of_Custody ;
+    sch:broader crm:E8_Acquisition ;
     crm:P30_transferred_custody_of <agent/TheMetropolitanMuseum> ;
     crm:P31_has_modified <item/Artwork> ;
-    crm:P32_acquired_title_through "Mrs. Charles Wrightsman".
+    crm:P22_acquired_title_through "Mrs. Charles Wrightsman".
 
 </agent/TheMetropolitanMuseum> a crm:E74_Group ;
     gn:locatedIn <place/NewYork> ;
@@ -171,22 +172,18 @@
                 #MOVIE
 <item/movie> a schema:Movie ;   
     crm:P102_has_title "Cleopatra" ;
-    schema:director <person/Joseph_L_Mankiewie> ;
-    schema:producer <person/Walter_Wanger> ;
+    schema:director "Joseph_L_Mankiewie" ;
+    schema:producer "Walter_Wanger" ;
     schema:datePublished "1963"^^xsd:gYear ;
     schema:genre "Colossal" ;
-    schema:duration "217min" ;
-    crm:P7_took_place_at <place/UnitedStates> ; 
-    dct:inLanguage "English" ;
+    schema:duration "217 min";
+    crm:P7_took_place_at "UnitedStates" ; 
+    dct:inLanguage "English" ;   
     crm:P108_was_produced_by <agent/20th_Century_Studios> ; 
     crm:P129is_about <person/CleopatraVII>  ;
     crm:PC14_carried_out_by <person/ElizabethTaylor>  ;
     dcterms:subject <person/JuliusCaesar>;
     dcterms:subject <person/MarkAntony>.
-
-<place/UnitedStates> a crm:E53_Place ;
-    rdf:label "United States";
-    owl:sameAs <https://www.geonames.org/6252001/united-states.html> .
 
 <person/ElizabethTaylor> a crm:E39Actor;
     rdf:label "Elizabeth Taylor";
@@ -196,11 +193,5 @@
 <agent/20th_Century_Studios> a schema:Organization;
     rdf:label "20th Century Studios";
     owl:sameAs <https://dbpedia.org/20th_Century_Studios>.
-
-<person/Joseph_L_Mankiewie> a foaf:Person;
-    crm:94_has_created <item/movie>.
-
-<person/Walter_Wanger> a foaf:Person;
-    crm:94_has_created <item/movie>.
 
 

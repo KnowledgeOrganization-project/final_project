@@ -10,6 +10,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix time: <http://www.w3.org/2006/time#>.
 @prefix lido: <http://www.lido-schema.org/> .
+@prefix sch: <http://www.w3.org/2004/02/skos/core#> .
 
 <item/Bracelet> crm:P2_has_type crm:E24_Physical_Human_Made_Thing ; #"Archaeological Artifact" ;
     crm:E45_consists_of crm:E55_Type ; #made of "Gold"
@@ -20,7 +21,7 @@
     crm:P32_used_general_technique crm:E55_Type ; #"Incision" ;
     crm:P32_used_general_technique crm:E55_Type ; #"Twisting" ;
     dct:creator </agent/AncientEgyptians> ;
-    crm:P32_acquired_title_through <event/bequeathal> .
+    crm:P23_transferred_title_from <event/bequeathal> .
 
 <place/Egypt> a crm:E53_Place ;
     owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
@@ -41,9 +42,10 @@
     crm:P82b_end_of_the_end time:Year . #"30 BC"^^xsd:gYear .
 
 <event/bequeathal> a crm:E10_Transfer_of_Custody ;
+    sch:broader crm:E8_Acquisition ;
     crm:P30_transferred_custody_of <agent/TheBritishMuseum> ;
     crm:P31_has_modified <item/bracelet> ;
-    crm:P32_acquired_title_through crm:E39_Actor ; #"Sir Augustus Wollaston Franks" ;
+    crm:P22_acquired_title_through crm:E39_Actor ; #"Sir Augustus Wollaston Franks" ;
     dct:date time:Year . #"1897"^^xsd:gYear .
 
 <agent/TheBritishMuseum> a crm:E39_Actor ;
