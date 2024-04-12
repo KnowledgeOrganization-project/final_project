@@ -1,32 +1,46 @@
-@prefix ex: <http://cleopatra-project.org/>.
+@base<https://w3id.org/unveiling_cleopatra/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix dct: <http://purl.org/dc/terms/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix schema: <http://schema.org/>.
+@prefix dbr: <http://dbpedia.org/resource/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>. 
-@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix dcterms: <https://purl.org/dc/terms/>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix time: <http://www.w3.org/2006/time#>.
 
-ex:CleopatraMovie a dbo:Movie ;
-    dcterms:title "Cleopatra"^^xsd:string ;
-    schema:director <http://cleopatra-project.org/person/Joseph_L_Mankiewie> ;
-    schema:producer <http://cleopatra-project.org/person/Walter_Wanger> ;
-    schema:datePublished "1963"^^xsd:date ;
-    schema:genre ex:Colossal ;
-    schema:duration "217min"^^xsd:string ;
-    crm:E53_Place ex:UnitedStates ;
-    schema:language "English" ;
-    schema:productionCompany <http://cleopatra-project.org/organization/20th_Century_Studios> ;
-    dcterms:subject ex:CleopatraVII .
+<item/movie> a schema:Movie ;   
+    crm:P102_has_title crm:E35_Tile ; #"Cleopatra"
+    schema:director <person/Joseph_L_Mankiewie> ;
+    schema:producer <person/Walter_Wanger> ;
+    schema:datePublished time:Year ; #"1963"  
+    schema:genre dbr:Colossal; #"Colossal" ;
+    schema:duration schema:Duration; #"217min"
+    crm:P7_took_place_at <place/UnitedStates> ; 
+    dct:inLanguage schema:Language ; #"English" 
+    crm:P108_was_produced_by <agent/20th_Century_Studios> ; 
+    crm:P129is_about <person/CleopatraVII>  ;
+    crm:PC14_carried_out_by <person/ElizabethTaylor>  ;
+    dcterms:subject <person/JuliusCaesar>;
+    dcterms:subject <person/MarkAntony>.
 
-ex:UnitedStates a crm:E53_Place ;
+<place/UnitedStates> a crm:E53_Place ;
+    rdf:label "United States";
     owl:sameAs <https://www.geonames.org/6252001/united-states.html> .
 
-ex:CleopatraVII a ex:Person ;
-    rdfs:label "Cleopatra VII" ;
-    owl:sameAs <http://viaf.org/viaf/67762941> ;
-    owl:sameAs <https://dbpedia.org/page/Cleopatra> .
+<person/ElizabethTaylor> a crm:E39Actor;
+    rdf:label "Elizabeth Taylor";
+    owl:sameAs <https://viaf.org/24624716/>;
+    crm:P141_in_the_role_of <person/CleopatraVII> .
 
-ex:Colossal a schema:Genre ;
-    schema:name "Colossal" .
+<agent/20th_Century_Studios> a schema:Organization;
+    rdf:label "20th Century Studios";
+    owl:sameAs <https://dbpedia.org/20th_Century_Studios>.
+
+<person/Joseph_L_Mankiewie> a foaf:Person;
+    crm:94_has_created <item/movie>.
+
+<person/Walter_Wanger> a foaf:Person;
+    crm:94_has_created <item/movie>.
+
