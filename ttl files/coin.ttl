@@ -35,7 +35,7 @@
     bf:family <person/CleopatraVII> .
 
 <type/tetradrachm> a crm:E98_Currency ;
-    crm:P91_is_unit_of E97_Monetary_Amount ;
+    crm:P91_is_unit_of crm:E97_Monetary_Amount ;
     owl:sameAs <https://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid=300037254>.
 
 <agent/ArtInstituteofChicago> a crm:E39_Actor ;
@@ -50,4 +50,4 @@
     owl:sameAs <https://www.getty.edu/vow/TGNFullDisplay?find=&place=&nation=&english=Y&subjectid=7593196> .
 
 <agent/RomanRepublic> a foaf:Organization ;
-    owl:sameAs <https://dbpedia.org/data/Roman_Republic>
+    owl:sameAs <https://dbpedia.org/data/Roman_Republic> .

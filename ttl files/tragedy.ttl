@@ -9,6 +9,9 @@
 <item/PrintedEdition> a crm:E31_Document ;
     crm:P102_has_title "Shakespeare's Tragedy of Antony and Cleopatra" ;
     crm:P138_represents <person/CleopatraVII> ;
+    crm:P138_represents <person/MarkAntony> ;
+    crm:P8_took_place_on <place/Egypt> ;
+    crm:P8_took_place_on <agent/RomanRepublic> ;
     crm:P94_has_created <https://viaf.org/viaf/96994048/> ; #William Shakespeare #this property represents the act of conceiving the intellectual content of the instance.
     schema:contributor "John Dryden" ;
     dct:type "Printed Edition" ; #dct:MediaType
@@ -22,3 +25,12 @@
 
 <person/CleopatraVII> a foaf:Person ;
     owl:sameAs <http://viaf.org/viaf/67762941> .
+
+<person/MarkAntony> a foaf:Person ;
+    owl:sameAs <https://viaf.org/viaf/88759462/> .
+
+<place/Egypt> a crm:E53_Place ;
+    owl:sameAs <https://www.geonames.org/357994/arab-republic-of-egypt.html> .
+
+<agent/RomanRepublic> a foaf:Organization ;
+    owl:sameAs <https://dbpedia.org/data/Roman_Republic> .

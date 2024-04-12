@@ -7,9 +7,7 @@
 @prefix schema: <http://schema.org/>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix pi:    <http://papyri.info/ns> .
-@prefix xs:    <http://www.w3.org/2001/XMLSchema> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <item/RoyalDecree> a foaf:Document ;
     foaf:page  <http://papyri.info/ddbdp/p.bingen;;45> ; 
