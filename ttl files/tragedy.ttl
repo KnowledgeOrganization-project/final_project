@@ -8,6 +8,7 @@
 
 <item/PrintedEdition> a crm:E31_Document ;
     crm:P102_has_title "Shakespeare's Tragedy of Antony and Cleopatra" ;
+    crm:P138_represents <person/CleopatraVII> ;
     crm:P94_has_created <https://viaf.org/viaf/96994048/> ; #William Shakespeare #this property represents the act of conceiving the intellectual content of the instance.
     schema:contributor "John Dryden" ;
     dct:type "Printed Edition" ; #dct:MediaType
@@ -18,3 +19,6 @@
     dct:published "1813" ;
     crm:P49_has_forme_or_current_keeper "Bavarian State Library" ;
     owl:sameAs <https://search.worldcat.org/title/8915410> .
+
+<person/CleopatraVII> a foaf:Person ;
+    owl:sameAs <http://viaf.org/viaf/67762941> .
