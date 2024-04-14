@@ -326,7 +326,7 @@
         </div>
 
         <p>
-          In this section, with the employment of advanced <b>computational tools</b> the team delves into the analysis of the printed edition by John Dryden, published in 1813, of Shakespeare's tragic masterpiece <i><a href="https://www.digitale-sammlungen.de/en/details/bsb10749937" target="_blank">Antony and Cleopatra</a></i>, digitized by Digitization Center of the <b>Bavarian State Library</b> in Munich. Through the lens of <b>XML/TEI encoding</b>, <b>XSLT conversion</b>, <b>RDF/XML representation</b>, and <b>Python scripting</b>, we endeavor to unveil deeper layers of meaning embedded within the text. Our analysis of this text transcends traditional methodologies, offering an <b>interdisciplinary approach</b> to literary scholarship.
+          In this section, with the employment of advanced <b>computational tools</b> the team delves into the analysis of the printed edition by John Dryden, published in 1813, of Shakespeare's tragic masterpiece <i><a href="https://www.digitale-sammlungen.de/en/details/bsb10749937" target="_blank">Antony and Cleopatra</a></i>, digitized by the <b>Digitization Center</b> of the <b>Bavarian State Library</b> in Munich. Through the lens of <b>XML/TEI encoding</b>, <b>XSLT conversion</b>, <b>RDF/XML representation</b>, and <b>Python scripting</b>, we endeavor to unveil deeper layers of meaning embedded within the text. Our analysis of this text transcends traditional methodologies, offering an <b>interdisciplinary approach</b> to literary scholarship.
           <br>
           <br>
         </p>
@@ -338,29 +338,33 @@
 
         <br>
 
+        <h4>Python Scripts for Conversions</h4>
+        <p>To automate the conversion processes and streamline analysis, the team developed two Python scripts tailored to handle the transformation of XML/TEI to HTML and to RDF/Turtle formats. Leveraging libraries such as <b>lxml</b> and <b>RDFLib</b>, these scripts orchestrate the transformation pipeline with efficiency and reliability.
+
+
+          <script src="https://gist.github.com/lucreziapograri/cff3cfee370b279d38d8293104b30774.js"></script> <!-- XSLT-->
+          <script src="https://gist.github.com/lucreziapograri/4d5978acd646253c95dbd1696c02e704.js"></script> <!-- RDF -->
+
+        </p>        
+        
+        <br>
+
+
         <h4>XSLT Document for XML to HTML Conversion</h4>
-        <p>To enhance accessibility readability and navigation, we employ XSLT - <b>eXtensible Stylesheet Language Transformation</b> - to transform the XML/TEI document into <b>HTML format</b>. This XSLT document applies stylistic and structural transformations, rendering the text in a web-friendly layout.
+        <p>To enhance accessibility readability and navigation, we employ XSLT - <b>eXtensible Stylesheet Language Transformation</b> - to transform the XML/TEI document to a <b>HTML format</b>. This XSLT document applies stylistic and structural transformations, rendering the text in a web-friendly layout.
         
-          <script src="https://gist.github.com/lucreziapograri/b3447b85de9a1994b15a836febd9cdd2.js"></script> 
-          <!-- da correggere -->
-        
-        </p>
-          <br>
-          <p>The HTML document resulting from the transformation is available <a href="" target="_blank">here</a>.</p>
-          <br>
+          <br><p><b>XSLT document</b> is available at this <a href="TEXT_CONVERSIONS/stylesheet.xslt" target="_blank">link</a>.</p>
+
+          <p><b>HTML document</b> resulting from the transformation is available at this <a href="PrintedEdition.html" target="_blank">link</a>.</p>
+
+        <br>
 
         
         <h4>RDF/XML Dataset</h4>
-        <p>In our pursuit of <b>semantic analysis</b>, we generate an RDF/XML file that encapsulates the conceptual relationships and thematic elements prevalent within the text. RDF - <b>Resource Description Framework</b> - provides a robust framework for expressing metadata and interlinking concepts, fostering deeper insights into the play's motifs, character dynamics, and narrative arcs. Through this representation, we lay the groundwork for semantic querying and inferential analysis, enriching scholarly discourse surrounding the text.
+        <p>In our pursuit of <b>semantic analysis</b>, we generate an RDF/Turtle file that encapsulates the conceptual relationships and thematic elements prevalent within the text. RDF - <b>Resource Description Framework</b> - provides a robust framework for expressing metadata and interlinking concepts, fostering deeper insights into the play's motifs, character dynamics, and narrative arcs. Through this representation, we lay the groundwork for semantic querying and inferential analysis, enriching scholarly discourse surrounding the text.
+        <p>Below you can find the Turtle serialization of our XML/TEI document.</p>
         
-          <!-- inserisci qui lo script del file RDF-->
-
-        </p>
-
-        <h4>Python Script for Conversions</h4>
-        <p>To automate the conversion processes and streamline analysis, we developped a Python script tailored to handle the transformation of XML/TEI to HTML and to RDF/XML formats. Leveraging libraries such as <b>lxml</b> and <b>RDFLib</b>, this script orchestrates the transformation pipeline with efficiency and reliability.
-
-          <script src="https://gist.github.com/lucreziapograri/4d5978acd646253c95dbd1696c02e704.js"></script>
+          <script src="https://gist.github.com/lucreziapograri/a527795784d22110fcf3eed44c6884be.js"></script>
 
         </p>
 
