@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: #c9af18;
+  color: #ffc400;
   text-decoration: none;
 }
 
@@ -1104,7 +1104,7 @@ section {
 }
 
 .counts .image {
-  background: url("../img/demo2.jpg") center center no-repeat;
+  background: url("../img/cleopatraBG.jpg") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
