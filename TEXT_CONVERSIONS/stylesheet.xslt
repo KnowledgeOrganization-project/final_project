@@ -11,7 +11,7 @@
                     <xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                 </title>
                 <style>
-                    /* Add your CSS styles here */
+
                     body {
                         font-family: Arial, sans-serif;
                         margin: 20px;
@@ -122,7 +122,7 @@
     </xsl:template>
     
     <!-- Convert stage directions -->
-    <xsl:template match="tei:stage">
+    <xsl:template match="tei:stage | tei:hi">
         <p class="stage"><i>
             <xsl:value-of select="."/>
         </i></p>
@@ -163,12 +163,5 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <!-- Match stage and hi elements and add class attribute
-    <xsl:template match="tei:sp/tei:scene">
-        <h3 class="scene-dir">
-            <i><xsl:value-of select="tei:hi"/></i>
-            <xsl:apply-templates/>
-        </h3>
-    </xsl:template> -->
     
 </xsl:stylesheet>
