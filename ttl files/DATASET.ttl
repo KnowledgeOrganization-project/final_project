@@ -1,22 +1,23 @@
 @base <https://w3id.org/unveiling-cleopatra.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix mo: <http://purl.org/ontology/mo/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix dbr: <http://dbpedia.org/resource/>.
-@prefix dbo: <http://dbpedia.org/ontology/>.
-@prefix dbp: <https://dbpedia.org/property/>.
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <https://dbpedia.org/property/> .
 @prefix dbc: <http://dbpedia.org/resource/Category/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> . 
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix schema: <http://schema.org/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix schema: <http://schema.org/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix sch: <http://www.w3.org/2004/02/skos/core#> .
 @prefix bf:  <https://www.loc.gov/bibframe/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix time: <http://www.w3.org/2006/time#>.
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix rda: <http://rdvocab.info/Elements/> .
 
 
 
@@ -98,25 +99,32 @@
     
 
                 #PRINTED EDITION
-<item/PrintedEdition> a crm:E31_Document ;
-    crm:P102_has_title "Shakespeare's Tragedy of Antony and Cleopatra" ;
-    crm:P138_represents <person/CleopatraVII> ;
-    crm:P138_represents <person/MarkAntony> ;
+<item/PrintedEdition> a bf:Instance ;
+    bf:instanceOf dbr:Antony_and_Cleopatra ; # bf:Work (of Shakespeare) ;
+    bf:title "Shakespeare's Tragedy of Antony and Cleopatra" ;
+    bf:extent "71 sheets" ;
+    crm:P129_is_about <person/CleopatraVII> ;
+    crm:P129_is_about <person/MarkAntony> ;
     crm:P129_is_about <place/Egypt> ;
     crm:P129_is_about <agent/RomanRepublic> ;
-    crm:P94_has_created "William Shakespeare" ;
+    crm:P94_has_created <https://viaf.org/viaf/96994048/> ; #William Shakespeare ; #this property relates to the act of conceiving the intellectual content of the instance.
     schema:contributor "John Dryden" ;
     dct:type "Printed Edition" ; #dct:MediaType
-    crm:P72_has_language "English" ;
+    bf:language "English" ;
     schema:genre dbr:Drama ;
-    dct:created "1607 ca." ;
-    dct:published "London" ;
-    dct:published "1813"^^xsd:gYear ;
-    crm:P49_has_forme_or_current_keeper <agent/BavarianStateLibrary> ;
-    owl:sameAs <https://search.worldcat.org/title/8915410> .
+    rda:dateOfWork "1607 ca." ; # origianl work from Shakespeare
+    rda:placeOfPublication "London" ;
+    dct:published "1813" ;
+    dct:publisher "Barker" ;
+    dct:identifier "BV001648109"^^xsd:string ;
+    bf:identifiedBy "urn:nbn:de:bvb:12-bsb10749937-2" ;
+    bf:summary "The printed edition by John Dryden of Shakespeare's 'Antony and Cleopatra' offers a deep exploration of the passionate relationship between Roman general Mark Antony and Egyptian queen Cleopatra. Within its pages, themes of love, power, and political maneuvering intertwine, highlighting the tension between personal desires and public duties. Dryden's editorial work aims to contemporize Shakespeare's original text, incorporating revisions and alterations to reflect the moral and literary sensibilities of the editor's milieu."^^xsd:string ;
+    crm:P49_has_former_or_current_keeper <agent/BavarianStateLibrary> ;
+    bf:shelfMark "P.o.angl. 370 cp" ;
+    owl:sameAs <https://search.worldcat.org/title/230974863> .
 
 <agent/BavarianStateLibrary> a crm:E74_Group ;
-    owl:sameAs dbr:Bavarian_State_Library ;
+    owl:sameAs <https://search.worldcat.org/libraries/39230> ;
     gn:locatedIn <place/Munich> ;
     rdfs:label "Bavarian State Library" .
 
@@ -142,7 +150,7 @@
 
 
                 #PAINTING
-<item/Artwork> crm:P2_has_type "Artwork" ;   #aat:300033618
+<item/Artwork> crm:P2_has_type crm:E36_Visual_Item ;  #"Artwork" = aat:300033618 ;
     owl:sameAs <https://www.wikidata.org/wiki/Q78638360> ;
     crm:P102_has_title "The Meeting of Antony and Cleopatra" ;
     crm:P138_represents <person/CleopatraVII> ;

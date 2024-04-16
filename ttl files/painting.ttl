@@ -11,8 +11,7 @@
 @prefix time: <http://www.w3.org/2006/time#>.
 @prefix efrbroo: <https://erlangen-crm.org/efrbroo/> .
 
-<item/Artwork> a efrbroo:F4_Manifestation_Singleton ;  #"Artwork" ;   
-    crm:P2_has_type crm:E36_Visual_Item ;
+<item/Artwork> crm:P2_has_type crm:E36_Visual_Item ;  #"Artwork" ;   
     owl:sameAs <https://www.wikidata.org/wiki/Q78638360> ;
     crm:P102_has_title crm:E35_Title ; #"The Meeting of Antony and Cleopatra" ;
     crm:P138_represents <person/CleopatraVII> ;

@@ -191,7 +191,7 @@
         <h5 class="card-title">"Shakspeare's Tragedy of Antony and Cleopatra"</h5>
         <h6>PRINTED EDITION</h6>
         <p class="card-text">
-          The printed edition of <b>Shakespeare's play</b> <i>Antony and Cleopatra</i>, published in <b>London</b> by editor <b>John Dryden</b> in <b>1813</b>, delves into the tumultuous romance between Roman general <b>Mark Antony</b> and Egyptian queen <b>Cleopatra</b>. It delves into themes of love, power, and political intrigue while exploring the conflict between personal desires and public responsibilities. Dryden's edition contains revisions and alterations aimed at modernizing the original text, aligning it with the moral and literary standards of the <b>19th century</b>.
+          The printed edition of <b>Shakespeare's play</b> <i>Antony and Cleopatra</i> edited by <b>John Dryden</b> and published in <b>London</b> by <b>Barker</b> in <b>1813</b>. It delves into the tumultuous romance between Roman general <b>Mark Antony</b> and Egyptian queen <b>Cleopatra</b>. Dryden's edition contains revisions and alterations aimed at modernizing the original text, aligning it with the moral and literary standards of his milieu.
         
         </p>
         <a href="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=,1" class="btn btn-dark" role="button" target="_blank">See more</a>
@@ -330,13 +330,13 @@
         </div>
 
         <p>
-          In this section, with the employment of advanced <b>computational tools</b> the team delves into the analysis of the printed edition by John Dryden, published in 1813, of Shakespeare's tragic masterpiece <i><a href="https://www.digitale-sammlungen.de/en/details/bsb10749937" target="_blank">Antony and Cleopatra</a></i>, digitized by the <b>Digitization Center</b> of the <b>Bavarian State Library</b> in Munich. Through the lens of <b>XML/TEI encoding</b>, <b>XSLT conversion</b>, <b>RDF/XML representation</b>, and <b>Python scripting</b>, we endeavor to unveil deeper layers of meaning embedded within the text. Our analysis of this text transcends traditional methodologies, offering an <b>interdisciplinary approach</b> to literary scholarship.
+          In this section, with the employment of advanced <b>computational tools</b> the team delves into the analysis of the <a href="https://www.digitale-sammlungen.de/en/details/bsb10749937" target="_blank">printed edition</a> by John Dryden of Shakespeare's tragic masterpiece <i>Antony and Cleopatra</i>, digitized by the <b>Digitization Center</b> of the <b>Bavarian State Library</b> in Munich. Through the lens of <b>XML/TEI encoding</b>, <b>XSLT conversion</b>, <b>RDF/XML representation</b>, and <b>Python scripting</b>, we endeavor to unveil deeper layers of meaning embedded within the text. Our analysis of this text transcends traditional methodologies, offering an <b>interdisciplinary approach</b> to literary scholarship.
           <br>
           <br>
         </p>
 
         <h4>XML/TEI Document</h4>
-        <p>We encoded an XML/TEI document to represent the textual structure of a sample from the text. This document encapsulates not only the dialogues between characters but also stage directions and other critical elements essential for a comprehensive analysis. Adopting TEI - <b>Text Encoding Initiative</b> - guidelines, we ensure the integrity and richness of the original text are faithfully preserved.</p>
+        <p>We encoded an XML/TEI document to represent the textual structure of a sample from the text - Act 1, Scene 3. This document encapsulates not only the dialogues between characters but also stage directions and other critical elements essential for a comprehensive analysis. Adopting TEI - <b>Text Encoding Initiative</b> - guidelines, we ensure the integrity and richness of the original text are faithfully preserved.</p>
 
         <br><p><b>XML/TEI document</b> of <i>Antony and Cleopatra</i> text's sample is available at this <a href="TEI_doc.xml" target="_blank">link</a>.</p>
 
@@ -1103,6 +1103,7 @@
             <li>@prefix bf:  https://www.loc.gov/bibframe/</li>
             <li>@prefix dcterms: http://purl.org/dc/terms/</li>
             <li>@prefix time: http://www.w3.org/2006/time#</li>
+            <li>@prefix rda: http://rdvocab.info/Elements/</li>
           
           </ul>
         </p>
@@ -1260,20 +1261,26 @@
                   </thead>
 
                   <tbody>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>rdf:type</td><td>Printed Edition</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P102_has_title</td><td>Shakespeare's Tragedy of Antony and Cleopatra</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>rdf:type</td><td>Instance of a Work</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>dct:type</td><td>Printed Edition</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>bf:title</td><td>Shakespeare's Tragedy of Antony and Cleopatra</td></tr>
                     <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P94_has_created</td><td>William Shakespeare</td></tr>
                     <tr><th>Tragedy of Antony and Cleopatra</th><td>schema:contributor</td><td>John Dryden</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P138_represents</td><td>Cleopatra VII</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P138_represents</td><td>Mark Antony</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P72_has_language</td><td>English</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>schema:genre</td><td>Theatral text</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>dct:created</td><td>1607 ca.</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>dct:published</td><td>London</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>dct:published</td><td>1813</td></tr>
-                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P49_has_forme_or_current_keeper</td><td>Bavarian State Library of Munich</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P129_is_about</td><td>Cleopatra VII</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P129_is_about</td><td>Mark Antony</td></tr>
                     <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P129_is_about</td><td>Egypt</td></tr>
                     <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P129_is_about</td><td>Roman Republic</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>bf:language</td><td>English</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>schema:genre</td><td>Drama</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>rda:dateOfWork</td><td>1607 ca.</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>rda:placeOfPublication</td><td>London</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>dct:published</td><td>1813</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>dct:publisher</td><td>Barker</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>dct:identifier</td><td>BV001648109</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>bf:identifiedBy</td><td>URN: urn:nbn:de:bvb:12-bsb10749937-2</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>bf:shelfMark</td><td>P.o.angl. 370 cp</td></tr>
+                    <tr><th>Tragedy of Antony and Cleopatra</th><td>crm:P49_has_forme_or_current_keeper</td><td>Bavarian State Library of Munich</td></tr>
+
                   </tbody>
                 </table>
 
