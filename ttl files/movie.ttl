@@ -19,7 +19,7 @@
     schema:genre dbr:Colossal; #"Colossal" ;
     schema:duration schema:Duration; #"217min"
     crm:P7_took_place_at <place/UnitedStates> ; 
-    dct:inLanguage schema:Language ; #"English" 
+    schema:inLanguage schema:Language ; #"English" 
     crm:P108_was_produced_by <agent/20th_Century_Studios> ; 
     crm:P129is_about <person/CleopatraVII>  ;
     crm:PC14_carried_out_by <person/ElizabethTaylor>  ;
