@@ -7,7 +7,7 @@ Movie,crm:P108_was_produced_by, 20th Century Studios
 Movie,schema:datePublished, 1963
 Movie,schema:duration, 217min
 Movie,crm:P7_took_place_at, United States  
-Movie,dct:inLanguage,English
+Movie,schema:inLanguage,English
 Movie,dcterms:subject, Cleopatra VII
 Movie,schema:genre, Colossal
 Movie,crm:PC14_carried_out_by, Elizabeth Taylor
