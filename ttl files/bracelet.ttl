@@ -13,7 +13,7 @@
 @prefix sch: <http://www.w3.org/2004/02/skos/core#> .
 
 <item/Bracelet> crm:P2_has_type crm:E24_Physical_Human_Made_Thing ; #"Archaeological Artifact" ;
-    crm:E45_consists_of crm:E55_Type ; #made of "Gold"
+    crm:P45_consists_of crm:E55_Type ; #made of "Gold"
     crm:P4_has_time-span <timespan/PtolemaicPeriod> ;
     dct:provenance <place/Egypt> ;
     crm:P50_has_current_keeper </agent/TheBritishMuseum> ;
